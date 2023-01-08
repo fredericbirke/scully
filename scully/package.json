@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@sentry/node": "^7.29.0",
+    "@types/puppeteer": "^7.0.4",
     "asciidoctor": "^2.2.6",
     "chalk": "^5.2.0",
     "chokidar": "^3.5.3",
@@ -33,6 +34,7 @@
     "marked": "^4.2.5",
     "open": "^8.4.0",
     "prismjs": "^1.29.0",
+    "puppeteer": "^19.4.1",
     "rxjs": "^7.8.0",
     "selfsigned": "^2.1.1",
     "ws": "^8.12.0",

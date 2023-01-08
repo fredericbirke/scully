@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable no-case-declarations */
 // tslint:disable: no-shadowed-variable
-import { Serializable } from 'puppeteer';
+import { Serializable } from '../routerPlugins/handledRoute.interface.js';
 import { logError, yellow } from '../utils/log.js';
 import { PluginFunction, PluginTypes } from './Plugin.interfaces.js';
 import { accessPluginDirectly, plugins, pluginTypes, routeProcessPriority } from './pluginRepository.js';

@@ -1,4 +1,3 @@
-import { Serializable } from 'puppeteer';
 export interface RouteConfig {
   /** this route does a manual Idle check */
   manualIdleCheck?: boolean;
@@ -69,4 +68,10 @@ export interface ContentTextRoute extends HandledRoute {
   contentType?: string;
   /** The actual raw content that will be rendered into scully-content */
   content?: string | ((route?: HandledRoute) => string);
+}
+
+export type Serializable = number | string | boolean | null | undefined | BigInt | JSONArray | JSONObject;
+export type JSONArray = readonly Serializable[];
+export interface JSONObject {
+  [key: string]: Serializable;
 }
