@@ -1,0 +1,11 @@
+import '../fileHanderPlugins/asciidoc.js';
+import '../fileHanderPlugins/html.js';
+import '../fileHanderPlugins/markdown.js';
+import '../renderPlugins/contentRenderPlugin.js';
+import '../routerPlugins/contentFolderPlugin.js';
+import '../renderPlugins/contentTextRenderPlugin.js';
+import '../routerPlugins/defaultRouterPlugin.js';
+import '../routerPlugins/ignoredRoutePlugin.js';
+import '../routerPlugins/jsonRoutePlugin.js';
+import '../renderPlugins/seoHrefCompletionPlugin.js';
+import '../renderPlugins/content-render-utils/customMarkdownOptions.js';
