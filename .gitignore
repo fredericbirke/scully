@@ -60,5 +60,3 @@ bs.sh
 consoleProxy.ts
 .angular
 *.tgz
-testCreate.sh
-scully/runtime

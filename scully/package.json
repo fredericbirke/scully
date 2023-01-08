@@ -12,14 +12,22 @@
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "lib",
+    "index.*",
+    "scully.*"
+  ],
   "type": "module",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "author": "@herodevs",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json"
+  },
   "dependencies": {
     "@sentry/node": "^7.29.0",
     "@types/puppeteer": "^7.0.4",
-    "asciidoctor": "^2.2.6",
     "chalk": "^5.2.0",
     "chokidar": "^3.5.3",
     "compression": "^1.7.4",
