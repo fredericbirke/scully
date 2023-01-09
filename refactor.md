@@ -13,17 +13,17 @@ We need to set up a clean structure like this:
 
 ```bash
 ├── documentation
-├── e2e (includes the apps or other needed stuff to do FULL testing of scully)
+├── e2e # includes the apps or other needed stuff to do FULL testing of scully
 ├── LICENSE
 ├── package.json
-├── plugins (includes none related system/core plugins)
+├── plugins # includes none related system/core plugins
 ├── README.md
 ├── refactor.md
 ├── scully
-├─── cli
-├─── ng-lib
-├─── platform-server
-├─── etc....
+│    ├─── cli
+│    ├─── ng-lib
+│    ├─── platform-server
+│    └─── etc....
 └── workspace-tools
 ```
 
@@ -31,15 +31,17 @@ Each off theses folder has the following layout if the package will be published
 
 
 ```bash
-├── src (includes all source files)
-├── test (includes all test files)
+├── src # includes all source files
+├── test # includes all test files
 ├── README
-├── .eslintrc (for linting)
+├── .eslintrc # for linting
+├── .gitignore
+├── .npmignore
 ├── package.json
 ├── tsconfig.json
 ├── tsconfig.lib.json
 ├── tsconfig.spec.json
-
+└── bin # where the distribution files will be living
 ```
 
 
