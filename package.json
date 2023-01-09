@@ -8,7 +8,7 @@
     "url": "https://github.com/scullyio/scully.git"
   },
   "engines": {
-    "": "This is for building Scully itself, using is fine with 12+",
+    "": "This is for building Scully itself, using is fine with 16+",
     "node": ">=18"
   },
   "scripts": {},
