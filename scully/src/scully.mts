@@ -11,6 +11,8 @@ import { killScullyServer, prepServe, scullyInit, startServer } from './lib/util
 import { environmentChecks } from './lib/utils/startup/startUpEnvChecks.js';
 import { displayVersions, version } from './lib/utils/version.js';
 
+console.log('🎉 Welcome to Scully! 🎉')
+
 environmentChecks();
 
 process.title = 'Scully';

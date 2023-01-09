@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./scully",
+    "baseUrl": "./",
     "declaration": true,
     "downlevelIteration": true,
     "esModuleInterop": false,
@@ -9,9 +9,9 @@
     "importHelpers": false,
     "emitDeclarationOnly": false,
     "lib": ["ES2022", "dom"],
-    "module": "ESNext",
+    "module": "ES2022",
     "moduleResolution": "node",
-    "outDir": ".",
+    "outDir": "./bin",
     "sourceMap": true,
     "target": "ES2022",
     "types": ["node"],
