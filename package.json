@@ -13,14 +13,16 @@
   },
   "scripts": {
     "build": "wireit",
-    "build:ngLib": "wireit"
+    "build:ngLib": "wireit",
+    "build:sampleBlog": "wireit"
   },
   "wireit": {
     "build": {
       "dependencies": [
         "./core/cli:build",
-        "./core/scully-plugin-puppeteer:build",
-        "build:ngLib"
+        "./core/plugins/puppeteer:build",
+        "build:ngLib",
+        "build:sampleBlog"
       ]
     },
     "build:ngLib": {
@@ -35,6 +37,20 @@
       ],
       "output": [
         "dist/scullyio/ng-lib"
+      ]
+    },
+    "build:sampleBlog": {
+      "command": "ng build sample-blog --configuration production",
+      "files": [
+        "./tests/sample-blog/src/*",
+        "./tests/sample-blog/",
+        "angular.json"
+      ],
+      "output": [
+        "dist/sample-blog"
+      ],
+      "dependencies": [
+        "build:ngLib"
       ]
     }
   },
@@ -61,6 +77,8 @@
     "wireit": "^0.9.3"
   },
   "workspaces": [
-    "scully/cli"
+    "core/cli",
+    "core/ng-lib",
+    "core/plugins/puppeteer"
   ]
 }

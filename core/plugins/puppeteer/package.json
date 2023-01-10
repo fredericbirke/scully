@@ -22,7 +22,7 @@
         "lib"
       ],
       "dependencies": [
-        "../cli:build"
+        "../../../core/cli:build"
       ]
     }
   },

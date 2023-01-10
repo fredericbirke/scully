@@ -1,16 +1,20 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { isScullyGenerated, TransferStateService } from '@scullyio/ng-lib';
-import { Observable, of } from 'rxjs';
-import { catchError, filter, pluck, switchMap, map, shareReplay, tap } from 'rxjs';
+import { catchError, filter, map, Observable, of, pluck, shareReplay, switchMap, tap } from 'rxjs';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserComponent {
+  /** injections */
+  private route= inject(ActivatedRoute)
+  private http= inject(HttpClient)
+  private transferState= inject(TransferStateService)
+
   userId$: Observable<number> = this.route.params.pipe(
     pluck('userId'),
     filter(val => ![undefined, null].includes(val)),
@@ -40,9 +44,7 @@ export class UserComponent implements OnInit {
     ? this.transferState.getState<User>('user').pipe(tap(user => console.log('Incoming TSS user', user)))
     : this.apiUser$.pipe(tap(user => this.transferState.setState('user', user)));
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private transferState: TransferStateService) {}
 
-  ngOnInit() {}
 }
 
 export interface User {

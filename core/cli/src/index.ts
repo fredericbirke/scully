@@ -1,5 +1,6 @@
 import { getConfig, setConfig } from './lib/pluginManagement/pluginConfig.js';
 import './lib/pluginManagement/systemPlugins.js';
+import { captureException } from './lib/utils/captureMessage.js';
 import './lib/utils/exitHandler.js';
 
 export { findPlugin, getPluginConfig, setPluginConfig, setPluginPriority } from './lib/pluginManagement/pluginConfig.js';
@@ -27,3 +28,7 @@ export { startScully } from './lib/utils/startup/startup.js';
 export { waitForIt } from './lib/utils/waitForIt.js';
 export { getConfig as getMyConfig, setConfig as setMyConfig };
 export { Deferred } from './lib/utils/platform-server/deferred.js';
+
+export {
+  captureException
+}

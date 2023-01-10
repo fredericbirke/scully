@@ -23,7 +23,8 @@ We need to set up a clean structure like this:
 ├── core
 │    ├─── cli
 │    ├─── ng-lib
-│    ├─── platform-server
+│    ├─── plugins
+│    │     └ ppt # all the core plugins (ppt/pw/platformserver)
 │    └─── etc....
 └── workspace-tools
 ```

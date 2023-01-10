@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService, TransferStateService } from '@scullyio/ng-lib';
 import { map } from 'rxjs';
 
@@ -23,6 +23,11 @@ import { map } from 'rxjs';
   `
 })
 export class BlogHolderComponent {
+  /** injections */
+  private srs = inject(ScullyRoutesService);
+  private sts = inject(TransferStateService);
+
+
   blogs$ = this.sts.useScullyTransferState(
     'blogRoutes',
     this.srs.available$.pipe(
@@ -31,5 +36,4 @@ export class BlogHolderComponent {
     )
   );
 
-  constructor(private srs: ScullyRoutesService, private sts: TransferStateService) {}
 }

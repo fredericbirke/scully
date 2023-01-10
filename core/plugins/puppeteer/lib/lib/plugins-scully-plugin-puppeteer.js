@@ -1,12 +1,11 @@
 // tslint:disable: no-string-literal
-import { createFolderFor, logError, logWarn, scullyConfig, title404, waitForIt, yellow } from '@scullyio/scully';
-import { captureException } from '@scullyio/scully/src/lib/utils/captureMessage.js';
-import { showBrowser, ssl } from '@scullyio/scully/src/lib/utils/cli-options.js';
+import { captureException, createFolderFor, logError, logWarn, scullyConfig, title404, waitForIt, yellow, cliOptions } from '@scullyio/scully';
 import { readFileSync } from 'fs';
 import { jsonc } from 'jsonc';
 import { join } from 'path';
 import { filter, interval, Subject, switchMap, take } from 'rxjs';
 import { launchedBrowser, reLaunch } from './launchedBrowser.js';
+const { showBrowser, ssl } = cliOptions;
 const errorredPages = new Map();
 let version = '0.0.0';
 try {

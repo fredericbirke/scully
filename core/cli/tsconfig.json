@@ -7,7 +7,7 @@
     "downlevelIteration": false,
     "esModuleInterop": false,
     "experimentalDecorators": true,
-    "importHelpers": false,
+    "importHelpers": true,
     "emitDeclarationOnly": false,
     "lib": ["ES2022", "dom"],
     "module": "ES2022",

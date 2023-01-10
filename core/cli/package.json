@@ -13,10 +13,21 @@
     "node": ">=18"
   },
   "files": [
-    "bin"
+    "bin/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./bin/index.js",
+        "types": "./bin/index.d.ts"
+      }
+    },
+    "./scully.mjs": "./bin/scully.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./bin/index.js",
+  "types": "./bin/index.d.ts",
   "type": "module",
-  "main": "./index.js",
   "author": "@herodevs",
   "license": "MIT",
   "scripts": {
@@ -58,7 +69,8 @@
     "selfsigned": "^2.1.1",
     "ws": "^8.12.0",
     "yaml": "^2.2.1",
-    "yargs": "^17.6.2"
+    "yargs": "^17.6.2",
+    "tslib": "^2.4.1"
   },
   "optionalDependencies": {
     "asciidoctor.js": "^2.2.6"

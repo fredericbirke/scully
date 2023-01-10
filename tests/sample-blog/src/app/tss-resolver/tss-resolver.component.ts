@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { pluck, tap } from 'rxjs';
 
@@ -7,10 +7,9 @@ import { pluck, tap } from 'rxjs';
   templateUrl: './tss-resolver.component.html',
   styleUrls: ['./tss-resolver.component.css']
 })
-export class TssResolverComponent implements OnInit {
+export class TssResolverComponent {
+  private route = inject(ActivatedRoute);
+
   user$ = this.route.data.pipe(pluck('user'));
 
-  constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {}
 }

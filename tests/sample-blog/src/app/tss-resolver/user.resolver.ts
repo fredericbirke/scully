@@ -2,8 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { TransferStateService } from '@scullyio/ng-lib';
-import { User } from '@sentry/node';
 import { first, Observable } from 'rxjs';
+
+interface User {
+  [key: string]: any;
+}
 
 @Injectable({ providedIn: 'root' })
 export class UserResolver implements Resolve<User> {

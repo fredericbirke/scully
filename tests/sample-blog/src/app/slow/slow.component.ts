@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { isScullyGenerated } from '@scullyio/ng-lib';
 import { first } from 'rxjs';
 
@@ -13,11 +13,15 @@ import { first } from 'rxjs';
   styles: [``]
 })
 export class SlowComponent {
+  /** injections */
+  private http= inject(HttpClient)
+
+
   isGenerated = isScullyGenerated();
 
   delay$ = this.http.get('/api/slow/2000');
 
-  constructor(private http: HttpClient) {
+  constructor() {
     this.delay$.pipe(first()).subscribe();
   }
 }
