@@ -1,0 +1,4 @@
+/* this fixes some issues with vscode not finding the correct config */
+{
+  "extends": "./tsconfig.lib.json"
+}
