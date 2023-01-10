@@ -45,6 +45,7 @@
     "all",
     "scully",
     "ngLib",
-    "plugins"
+    "plugins",
+    "tests"
   ]
 }
