@@ -20,5 +20,20 @@
     "seo",
     "scully-plugin",
     "plugin"
-  ]
+  ],
+  "wireit": {
+    "build": {
+      "command": "ng build ng-lib --prod",
+      "files": [
+        "src/**",
+        "package.json",
+        "ng-package.json",
+        "tsconfig.lib.json",
+        "README.md"
+      ],
+      "output": [
+        "../../dist/scullyio/ng-lib"
+      ]
+    }
+  }
 }

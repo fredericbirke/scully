@@ -95,7 +95,7 @@
       "@scullyio/ng-lib": [
         "dist/scullyio/ng-lib"
       ],
-      "@scullyio/scully": ["./scully/cli"],
+      "@scullyio/scully": ["./core/cli"],
     }
   }
 

@@ -19,6 +19,7 @@ apps/**/node_modules
 *.launch
 .settings/
 *.sublime-workspace
+.wireit
 
 # IDE - VSCode
 .vscode/*

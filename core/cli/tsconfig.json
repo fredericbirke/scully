@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "declaration": true,
-    "downlevelIteration": true,
+    "incremental": true,
+    "downlevelIteration": false,
     "esModuleInterop": false,
     "experimentalDecorators": true,
     "importHelpers": false,
@@ -12,12 +13,11 @@
     "module": "ES2022",
     "moduleResolution": "node",
     "outDir": "./bin",
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "ES2022",
     "types": ["node"],
     "typeRoots": [],
     "allowSyntheticDefaultImports": true
   },
   "files": ["src/index.ts", "src/scully.mts"],
-
 }

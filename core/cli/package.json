@@ -20,8 +20,21 @@
   "author": "@herodevs",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "build:watch": "tsc -p tsconfig.json"
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc --build",
+      "files": [
+        "src/",
+        "package.json",
+        "tsconfig.json"
+      ],
+      "output": [
+        "bin/**",
+        "bin/**/*"
+      ]
+    }
   },
   "dependencies": {
     "@sentry/node": "^7.29.0",

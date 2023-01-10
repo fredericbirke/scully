@@ -13,6 +13,7 @@ import { displayVersions, version } from './lib/utils/version.js';
 
 console.log('🎉 Welcome to Scully! 🎉')
 
+
 environmentChecks();
 
 process.title = 'Scully';

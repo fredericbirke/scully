@@ -5,21 +5,21 @@
   "projects": {
     "@scullyio/ng-lib": {
       "projectType": "library",
-      "root": "scully/ng-lib",
-      "sourceRoot": "scully/ng-lib/src",
+      "root": "core/ng-lib",
+      "sourceRoot": "core/ng-lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "scully/ng-lib/ng-package.json"
+            "project": "core/ng-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "scully/ng-lib/tsconfig.lib.prod.json"
+              "tsConfig": "core/ng-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "scully/ng-lib/tsconfig.lib.json"
+              "tsConfig": "core/ng-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "scully/ng-lib/tsconfig.spec.json",
+            "tsConfig": "core/ng-lib/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

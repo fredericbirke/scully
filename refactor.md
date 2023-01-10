@@ -19,7 +19,8 @@ We need to set up a clean structure like this:
 ├── plugins # includes none related system/core plugins
 ├── README.md
 ├── refactor.md
-├── scully
+├── scully # config folder for scully test instances
+├── core
 │    ├─── cli
 │    ├─── ng-lib
 │    ├─── platform-server
