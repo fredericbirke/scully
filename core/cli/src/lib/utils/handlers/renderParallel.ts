@@ -4,7 +4,7 @@ import { renderRoute } from '../../renderPlugins/executePlugins.js';
 import { WriteToStorage } from '../../systemPlugins/writeToFs.plugin.js';
 import { asyncPool } from '../asyncPool.js';
 import { scullyConfig } from '../config.js';
-import { logWarn } from '../log.js';
+import { logWarn, printProgress } from '../log.js';
 import { performanceIds } from '../performanceIds.js';
 import { waitForIt } from '../waitForIt.js';
 
@@ -32,6 +32,7 @@ export async function renderParallel(dataRoutes: any[]): Promise<any[]> {
         return tries < 3 ? routeRender(route, tries + 1) : reThrow(e);
       })
       .then((html: string) => html && writeToFs(route.route, html));
+  printProgress(false, `Warming up rendering engine`)
   performance.mark('startRender');
   performanceIds.add('Render');
   let renderPool = [];

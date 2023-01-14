@@ -5,6 +5,7 @@
 
 
 import { ScullyConfig } from '@scullyio/scully';
+import '@scullyio/scully-plugin-puppeteer';
 
 
 

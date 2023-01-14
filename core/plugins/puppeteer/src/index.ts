@@ -8,10 +8,9 @@ declare global {
     ScullyIO: string | undefined;
     scullyVersion: string | undefined;
     "ScullyIO-injected": string | undefined;
-    onCustomEvent: (...args:any[]) => unknown;
+    scullyPageReadyEvent: (...args:any[]) => unknown;
   }
 }
-
 
 /** little hack to be able to share the browser instance */
 registerPlugin('enterprise', 'getPPTLaunchedBrowser', async () => launchedBrowser$);

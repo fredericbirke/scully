@@ -13,6 +13,8 @@ export async function asyncPool<T>(MaxParalellTasks: number, array: T[], taskFn:
   const ret = [];
   const executing = [];
   let logTime = performance.now();
+  printProgress(array.length, 'Rendering Routes:', array.length);
+
   for (const item of array) {
     const p = taskFn(item);
     ret.push(p);
