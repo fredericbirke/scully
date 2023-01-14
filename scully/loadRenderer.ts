@@ -14,18 +14,18 @@ export const loadRenderer = async () => {
       await import('@scullyio/scully-plugin-puppeteer');
       mainTread && logOk('Using Puppeteer to render pages');
       break;
-    case 'pw':
-      await import('@scullyio/scully-plugin-playwright');
-      logOk('Using Playwright to render pages');
-      break;
-    case `sps`:
-      enableSPS();
-      mainTread && logOk('Using Scully Platform Server to render pages');
-      break;
-    case `test`:
-      await import('./plugins/testRender.js');
-      mainTread && logOk('Using test to render pages');
-      break;
+    // case 'pw':
+    //   await import('@scullyio/scully-plugin-playwright');
+    //   logOk('Using Playwright to render pages');
+    //   break;
+    // case `sps`:
+    //   enableSPS();
+    //   mainTread && logOk('Using Scully Platform Server to render pages');
+    //   break;
+    // case `test`:
+    //   await import('./plugins/testRender.js');
+    //   mainTread && logOk('Using test to render pages');
+    //   break;
     default:
       throw new Error(`Unknown renderer ${rnd}`);
   }

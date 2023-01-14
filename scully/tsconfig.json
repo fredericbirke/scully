@@ -18,5 +18,5 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["plugins/**/*.ts", "*.ts"],
-  "exclude": ["**/*spec.ts", "*spec.ts", "./universal/**/*.*"]
+  "exclude": ["**/*spec.ts", "*spec.ts", "./universal/**/*.*", "./scully.sample-blog.config.ts"]
 }
