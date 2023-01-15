@@ -72,7 +72,16 @@
     "@angular-devkit/build-angular": "^15.0.4",
     "@angular/cli": "~15.0.5",
     "@angular/compiler-cli": "^15.0.4",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-angular": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@commitlint/cz-commitlint": "^17.4.2",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "ng-packagr": "^15.0.0",
+    "prettier": "^2.8.2",
     "typescript": "~4.8.2",
     "wireit": "^0.9.3"
   },
@@ -80,5 +89,20 @@
     "core/cli",
     "core/ng-lib",
     "core/plugins/puppeteer"
-  ]
+  ],
+  "lint-staged": {
+    "*.{js,ts,html,scss,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 120
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
