@@ -10,12 +10,11 @@ import { first } from 'rxjs';
     <h1 *ngIf="!isGenerated">Scully Not Generated</h1>
     <h1 *ngIf="isGenerated">Scully Generated</h1>
   `,
-  styles: [``]
+  styles: [``],
 })
 export class SlowComponent {
   /** injections */
-  private http= inject(HttpClient)
-
+  private http = inject(HttpClient);
 
   isGenerated = isScullyGenerated();
 

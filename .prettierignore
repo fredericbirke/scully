@@ -1,6 +1,11 @@
 # Add files here to ignore them from prettier formatting
 
-/dist
-/coverage
-/bin
-/lib
+dist
+coverage
+bin
+lib
+.wireit
+.angular
+node_modules
+lib/**
+bin/**

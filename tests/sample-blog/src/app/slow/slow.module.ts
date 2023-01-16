@@ -6,6 +6,6 @@ import { SlowComponent } from './slow.component';
 
 @NgModule({
   declarations: [SlowComponent],
-  imports: [CommonModule, SlowRoutingModule]
+  imports: [CommonModule, SlowRoutingModule],
 })
 export class SlowModule {}

@@ -7,7 +7,7 @@ import { map, tap } from 'rxjs';
 @Component({
   selector: 'app-static',
   templateUrl: './static.component.html',
-  styleUrls: ['./static.component.css']
+  styleUrls: ['./static.component.css'],
 })
 export class StaticComponent implements OnInit {
   /** injections */
@@ -21,8 +21,8 @@ export class StaticComponent implements OnInit {
   topLevel$ = this.srs.topLevel$;
 
   title$ = this.srs.getCurrent().pipe(
-    map(r => r.title || ''),
-    tap(t => this.title.setTitle(t))
+    map((r) => r.title || ''),
+    tap((t) => this.title.setTitle(t)),
   );
   constructor() {}
 
@@ -31,7 +31,7 @@ export class StaticComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
+    this.route.params.subscribe((params) => {
       this.toplevelOnly = params.topLevel !== 'all';
       this.unPublished = params.topLevel === 'unpublished';
     });

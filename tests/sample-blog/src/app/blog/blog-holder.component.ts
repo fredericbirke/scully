@@ -20,20 +20,18 @@ import { map } from 'rxjs';
     <span>
       <a [routerLink]="['/blog/page-4']" fragment="_first_level_heading">Route to Page 4 Fragment</a>
     </span>
-  `
+  `,
 })
 export class BlogHolderComponent {
   /** injections */
   private srs = inject(ScullyRoutesService);
   private sts = inject(TransferStateService);
 
-
   blogs$ = this.sts.useScullyTransferState(
     'blogRoutes',
     this.srs.available$.pipe(
-      map(routeList => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))),
-      map(blogs => blogs.sort((a, b) => (a.date < b.date ? -1 : 1)))
-    )
+      map((routeList) => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))),
+      map((blogs) => blogs.sort((a, b) => (a.date < b.date ? -1 : 1))),
+    ),
   );
-
 }

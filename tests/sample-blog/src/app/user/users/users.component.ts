@@ -8,7 +8,7 @@ import { User } from '../user.component';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
   private http = inject(HttpClient);
@@ -16,13 +16,12 @@ export class UsersComponent {
 
   apiUsers$ = this.http.get<User[]>(`/api/users`).pipe(
     catchError(() => of([] as User[])),
-    map(users => users.slice(0, 10)),
-    shareReplay(1)
+    map((users) => users.slice(0, 10)),
+    shareReplay(1),
   );
 
   // This is an example of using TransferState
   users$ = isScullyGenerated()
     ? this.transferState.getState<User[]>('users')
-    : this.apiUsers$.pipe(tap(user => this.transferState.setState('users', user)));
-
+    : this.apiUsers$.pipe(tap((user) => this.transferState.setState('users', user)));
 }

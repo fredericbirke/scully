@@ -13,6 +13,8 @@ export class UserResolver implements Resolve<User> {
   constructor(private http: HttpClient, private tss: TransferStateService) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<User> {
-    return this.tss.useScullyTransferState('tssUsers', this.http.get<User>('http://localhost:8200/users/10')).pipe(first());
+    return this.tss
+      .useScullyTransferState('tssUsers', this.http.get<User>('http://localhost:8200/users/10'))
+      .pipe(first());
   }
 }

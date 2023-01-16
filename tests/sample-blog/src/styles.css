@@ -25,7 +25,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('Gentium Book Basic Bold'), local('GentiumBookBasic-Bold'),
-    url(https://fonts.gstatic.com/s/gentiumbookbasic/v10/pe0wMJCbPYBVokB1LHA9bbyaQb8ZGjcw65RvzIfc.ttf) format('truetype');
+    url(https://fonts.gstatic.com/s/gentiumbookbasic/v10/pe0wMJCbPYBVokB1LHA9bbyaQb8ZGjcw65RvzIfc.ttf)
+      format('truetype');
 }
 @font-face {
   font-family: Roboto;

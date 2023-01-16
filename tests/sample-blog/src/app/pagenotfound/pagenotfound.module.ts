@@ -6,6 +6,6 @@ import { PagenotfoundComponent } from './pagenotfound.component';
 
 @NgModule({
   declarations: [PagenotfoundComponent],
-  imports: [CommonModule, PagenotfoundRoutingModule]
+  imports: [CommonModule, PagenotfoundRoutingModule],
 })
 export class PagenotfoundModule {}

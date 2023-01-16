@@ -6,6 +6,6 @@ import { StaticComponent } from './static.component';
 
 @NgModule({
   declarations: [StaticComponent],
-  imports: [CommonModule, StaticRoutingModule]
+  imports: [CommonModule, StaticRoutingModule],
 })
 export class StaticModule {}

@@ -5,17 +5,16 @@ import { map } from 'rxjs';
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
-  styleUrls: ['./blog-list.component.css']
+  styleUrls: ['./blog-list.component.css'],
 })
 export class BlogListComponent implements OnInit {
   /** injections */
   private srs = inject(ScullyRoutesService);
 
   blogs$ = this.srs.available$.pipe(
-    map(routeList => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))),
-    map(blogs => blogs.sort((a, b) => (a.date < b.date ? -1 : 1)))
+    map((routeList) => routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))),
+    map((blogs) => blogs.sort((a, b) => (a.date < b.date ? -1 : 1))),
   );
-
 
   ngOnInit() {}
 }

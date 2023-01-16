@@ -7,6 +7,6 @@ const routes: Routes = [{ path: '', component: PagenotfoundComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class PagenotfoundRoutingModule {}

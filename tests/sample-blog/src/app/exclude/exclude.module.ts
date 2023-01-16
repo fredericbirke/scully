@@ -6,6 +6,6 @@ import { ExcludeComponent } from './exclude.component';
 
 @NgModule({
   declarations: [ExcludeComponent],
-  imports: [CommonModule, ExcludeRoutingModule]
+  imports: [CommonModule, ExcludeRoutingModule],
 })
 export class ExcludeModule {}

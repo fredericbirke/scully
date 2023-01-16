@@ -9,7 +9,7 @@
     "puppeteer": "^19.5.0"
   },
   "type": "module",
-  "scripts" : {
+  "scripts": {
     "build": "wireit"
   },
   "wireit": {

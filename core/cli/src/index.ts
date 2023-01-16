@@ -3,7 +3,12 @@ import './lib/pluginManagement/systemPlugins.js';
 import { captureException } from './lib/utils/captureMessage.js';
 import './lib/utils/exitHandler.js';
 
-export { findPlugin, getPluginConfig, setPluginConfig, setPluginPriority } from './lib/pluginManagement/pluginConfig.js';
+export {
+  findPlugin,
+  getPluginConfig,
+  setPluginConfig,
+  setPluginPriority,
+} from './lib/pluginManagement/pluginConfig.js';
 export { configValidator, registerPlugin } from './lib/pluginManagement/pluginRepository.js';
 export { ContentMetaData } from './lib/renderPlugins/content-render-utils/readFileAndCheckPrePublishSlug.js';
 export { renderRoute } from './lib/renderPlugins/executePlugins.js';
@@ -29,6 +34,4 @@ export { waitForIt } from './lib/utils/waitForIt.js';
 export { getConfig as getMyConfig, setConfig as setMyConfig };
 export { Deferred } from './lib/utils/platform-server/deferred.js';
 
-export {
-  captureException
-}
+export { captureException };

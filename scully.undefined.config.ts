@@ -3,11 +3,8 @@
  *   Project undifined is not configured for use with Scully message
  */
 
-
 import { ScullyConfig } from '@scullyio/scully';
 import '@scullyio/scully-plugin-puppeteer';
-
-
 
 export const config = {
   projectName: 'sample-blog',
@@ -35,9 +32,9 @@ export const config = {
        */
       userId: {
         url: 'http://localhost:8200/users',
-        resultsHandler: (raw: any[]) => raw.filter(row => row.id < 5),
-        property: 'id'
-      }
+        resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 5),
+        property: 'id',
+      },
     },
     // '/content/:slug': {
     //   type: 'customContent'
@@ -46,7 +43,7 @@ export const config = {
       type: 'default',
       postRenderers: ['contentText'],
       contentType: 'html',
-      content: '<h3>Hello!</h3>'
+      content: '<h3>Hello!</h3>',
     },
     '/content/there': {
       type: 'default',
@@ -55,7 +52,7 @@ export const config = {
       // content: '# blah'
       content: () => {
         return '<h2>Content generated from function</h2>';
-      }
+      },
     },
     '/user/:userId/post/:postId': {
       // Type is mandatory
@@ -65,33 +62,33 @@ export const config = {
        */
       userId: {
         url: 'http://localhost:8200/users',
-        resultsHandler: (raw: any[]) => raw.filter(row => row.id < 3),
-        property: 'id'
+        resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 3),
+        property: 'id',
       },
       postId: {
         url: 'http://localhost:8200/posts?userId=${userId}',
-        property: 'id'
-      }
+        property: 'id',
+      },
     },
     '/user/:userId/friend/:friendCode': {
       type: 'ignored',
       // type:'json',
       userId: {
         url: 'http://localhost:8200/users',
-        resultsHandler: (raw: any[]) => raw.filter(row => row.id < 3),
-        property: 'id'
+        resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 3),
+        property: 'id',
       },
       friendCode: {
         url: 'http://localhost:8200/users?userId=${userId}',
-        property: 'id'
-      }
+        property: 'id',
+      },
     },
     '/blog/:slug': {
       type: 'contentFolder',
       // postRenderers: [docLink],
       slug: {
-        folder: './tests/assets/blog-files'
-      }
+        folder: './tests/assets/blog-files',
+      },
     },
     // '/slow': {
     //   type: FlashPrevention,
@@ -99,25 +96,25 @@ export const config = {
     // },
     '/manualIdle': {
       type: 'default',
-      manualIdleCheck: true
+      manualIdleCheck: true,
     },
     '/someRoute': {
-      type: 'ignored'
+      type: 'ignored',
     },
     '/basehref': {
       type: 'default',
       // postRenderers: [baseHrefRewrite],
-      baseHref: '/basehref/'
+      baseHref: '/basehref/',
     },
     '/basehref/rewritten': {
       type: 'default',
       // postRenderers: [baseHrefRewrite],
-      baseHref: '/basehref/rewritten/'
+      baseHref: '/basehref/rewritten/',
     },
     '/basehref/removed': {
       type: 'default',
       // postRenderers: [baseHrefRewrite],
-      baseHref: '/basehref/removed/'
+      baseHref: '/basehref/removed/',
     },
     // '/test/fakeBase': {
     //   type: 'addFake'
@@ -131,5 +128,4 @@ export const config = {
     //   url: 'http://localhost:8200/users/1/raw'
     // }
   },
-
 } as ScullyConfig;

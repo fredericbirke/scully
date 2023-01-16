@@ -10,7 +10,7 @@ declare global {
 @Component({
   selector: 'app-manual-idle',
   templateUrl: './manual-idle.component.html',
-  styleUrls: ['./manual-idle.component.css']
+  styleUrls: ['./manual-idle.component.css'],
 })
 export class ManualIdleComponent implements OnInit {
   text = 'this text is displayed by automated detection';

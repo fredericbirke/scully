@@ -5,11 +5,11 @@ import { StaticComponent } from './static.component';
 
 const routes: Routes = [
   { path: ':topLevel', component: StaticComponent },
-  { path: '', component: StaticComponent, pathMatch: 'full' }
+  { path: '', component: StaticComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class StaticRoutingModule {}

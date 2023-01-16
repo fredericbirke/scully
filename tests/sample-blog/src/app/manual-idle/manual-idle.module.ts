@@ -6,6 +6,6 @@ import { ManualIdleComponent } from './manual-idle.component';
 
 @NgModule({
   declarations: [ManualIdleComponent],
-  imports: [CommonModule, ManualIdleRoutingModule]
+  imports: [CommonModule, ManualIdleRoutingModule],
 })
 export class ManualIdleModule {}

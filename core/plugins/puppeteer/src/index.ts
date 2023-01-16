@@ -7,8 +7,8 @@ declare global {
   interface Window {
     ScullyIO: string | undefined;
     scullyVersion: string | undefined;
-    "ScullyIO-injected": string | undefined;
-    scullyPageReadyEvent: (...args:any[]) => unknown;
+    'ScullyIO-injected': string | undefined;
+    scullyPageReadyEvent: (...args: any[]) => unknown;
   }
 }
 

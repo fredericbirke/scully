@@ -31,7 +31,6 @@ We need to set up a clean structure like this:
 
 Each off theses folder has the following layout if the package will be published
 
-
 ```bash
 ├── src # includes all source files
 ├── test # includes all test files
@@ -46,12 +45,10 @@ Each off theses folder has the following layout if the package will be published
 └── bin # where the distribution files will be living
 ```
 
-
 # Tools
 
 1. EsLint for linting all files (this will be in combinartion with typescript-eslint)
 2. Relaease Please as GH action to take control over SemVer for all packages
 3. Husky, lint-staged, prettier and commitlint for making sure that formatting and commit is correct.
-4. *Test tool needs to be checked*
-(note that this is a work in progress, and will change as we go, for example, there isn't a place for out tests just yet.)
-
+4. _Test tool needs to be checked_
+   (note that this is a work in progress, and will change as we go, for example, there isn't a place for out tests just yet.)

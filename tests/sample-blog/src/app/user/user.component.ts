@@ -7,44 +7,42 @@ import { catchError, filter, map, Observable, of, pluck, shareReplay, switchMap,
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  styleUrls: ['./user.component.css'],
 })
 export class UserComponent {
   /** injections */
-  private route= inject(ActivatedRoute)
-  private http= inject(HttpClient)
-  private transferState= inject(TransferStateService)
+  private route = inject(ActivatedRoute);
+  private http = inject(HttpClient);
+  private transferState = inject(TransferStateService);
 
   userId$: Observable<number> = this.route.params.pipe(
     pluck('userId'),
-    filter(val => ![undefined, null].includes(val)),
-    map(val => parseInt(val, 10)),
-    shareReplay(1)
+    filter((val) => ![undefined, null].includes(val)),
+    map((val) => parseInt(val, 10)),
+    shareReplay(1),
   );
-  next$ = this.userId$.pipe(map(id => Math.min(+id + 1, 10)));
-  prev$ = this.userId$.pipe(map(id => Math.max(1, +id - 1)));
+  next$ = this.userId$.pipe(map((id) => Math.min(+id + 1, 10)));
+  prev$ = this.userId$.pipe(map((id) => Math.max(1, +id - 1)));
 
   apiUser$ = this.userId$.pipe(
-    switchMap(id =>
+    switchMap((id) =>
       this.http.get<User>(`/api/users/${id}`).pipe(
-        catchError(e => {
+        catchError((e) => {
           console.log('error', e);
           return of({
             id: id,
-            name: 'not found'
+            name: 'not found',
           } as User);
-        })
-      )
+        }),
+      ),
     ),
-    shareReplay(1)
+    shareReplay(1),
   );
 
   // This is an example of using TransferState
   user$ = isScullyGenerated()
-    ? this.transferState.getState<User>('user').pipe(tap(user => console.log('Incoming TSS user', user)))
-    : this.apiUser$.pipe(tap(user => this.transferState.setState('user', user)));
-
-
+    ? this.transferState.getState<User>('user').pipe(tap((user) => console.log('Incoming TSS user', user)))
+    : this.apiUser$.pipe(tap((user) => this.transferState.setState('user', user)));
 }
 
 export interface User {

@@ -8,7 +8,7 @@ describe('SlowComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [SlowComponent]
+      declarations: [SlowComponent],
     }).compileComponents();
   }));
 

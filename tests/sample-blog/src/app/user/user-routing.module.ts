@@ -14,13 +14,13 @@ const routes: Routes = [
     children: [
       { path: '', component: PostsComponent, pathMatch: 'full' },
       { path: 'friend/:friendCode', component: UserComponent },
-      { path: 'post/:postId', component: PostComponent }
-    ]
-  }
+      { path: 'post/:postId', component: PostComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class UserRoutingModule {}

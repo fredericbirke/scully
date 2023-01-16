@@ -5,11 +5,11 @@ import { ExcludeComponent } from './exclude.component';
 
 const routes: Routes = [
   { path: 'present', component: ExcludeComponent },
-  { path: 'notpresent', component: ExcludeComponent }
+  { path: 'notpresent', component: ExcludeComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class ExcludeRoutingModule {}

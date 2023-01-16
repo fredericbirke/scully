@@ -19,5 +19,5 @@
     "typeRoots": [],
     "allowSyntheticDefaultImports": true
   },
-  "files": ["src/index.ts", "src/scully.mts"],
+  "files": ["src/index.ts", "src/scully.mts"]
 }

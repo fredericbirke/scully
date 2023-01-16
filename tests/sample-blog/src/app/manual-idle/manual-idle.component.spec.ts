@@ -8,7 +8,7 @@ describe('ManualIdleComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ManualIdleComponent]
+      declarations: [ManualIdleComponent],
     }).compileComponents();
   }));
 

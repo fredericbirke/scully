@@ -8,7 +8,7 @@ describe('ExcludeComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ExcludeComponent]
+      declarations: [ExcludeComponent],
     }).compileComponents();
   }));
 
