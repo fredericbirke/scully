@@ -21,6 +21,7 @@
       "dependencies": [
         "./core/cli:build",
         "./core/plugins/puppeteer:build",
+        "./plugins/base-href-rewrite:build",
         "build:ngLib",
         "build:sampleBlog"
       ]
@@ -88,7 +89,8 @@
   "workspaces": [
     "core/cli",
     "core/ng-lib",
-    "core/plugins/puppeteer"
+    "core/plugins/puppeteer",
+    "plugins/base-href-rewrite"
   ],
   "lint-staged": {
     "*.{js,ts,html,scss,md,json}": [

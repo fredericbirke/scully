@@ -4,6 +4,8 @@
  */
 
 import { ScullyConfig } from '@scullyio/scully';
+import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
+
 import '@scullyio/scully-plugin-puppeteer';
 
 export const config = {
@@ -103,7 +105,7 @@ export const config = {
     },
     '/basehref': {
       type: 'default',
-      // postRenderers: [baseHrefRewrite],
+      postRenderers: [baseHrefRewrite],
       baseHref: '/basehref/',
     },
     '/basehref/rewritten': {

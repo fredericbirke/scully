@@ -1,0 +1,51 @@
+{
+  "name": "@scullyio/scully-plugin-base-href-rewrite",
+  "version": "3.0.0-beta.1",
+  "description": "Scully base-href-rewrite render plugin",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^2.4.1"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*"
+  },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/plugins/scully-plugin-base-href-rewrite"
+  },
+  "keywords": [
+    "angular",
+    "scully",
+    "seo",
+    "scully-plugin",
+    "base-href-rewrite",
+    "plugin",
+    "render"
+  ]
+}
