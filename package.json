@@ -14,7 +14,8 @@
   "scripts": {
     "build": "wireit",
     "build:ngLib": "wireit",
-    "build:sampleBlog": "wireit"
+    "build:sampleBlog": "wireit",
+    "prepare": "git config core.hooksPath .git-hooks"
   },
   "wireit": {
     "build": {
@@ -79,7 +80,6 @@
     "@commitlint/cz-commitlint": "^17.4.2",
     "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "ng-packagr": "^15.0.0",
     "prettier": "^2.8.2",
