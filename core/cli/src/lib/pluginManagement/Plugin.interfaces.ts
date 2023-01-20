@@ -6,18 +6,18 @@ export type ScullySystem = `scullySystem`;
 export type ErrorString = string;
 export type ConfigValidator = (RouteConfig) => ErrorString[] | Promise<ErrorString[]>;
 
-export type RoutePlugin = {
-  (route?: string, config?: any): Promise<HandledRoute[]>;
+export interface RoutePlugin {
+  (route: string, config?: any): Promise<HandledRoute[]>;
   [configValidator]?: ConfigValidator | undefined;
 };
 export type PluginFunction = (...args: any[]) => any;
 export type postProcessByDomPlugin = (dom?: JSDOM, route?: HandledRoute) => Promise<JSDOM>;
 export type postProcessByHtmlPlugin = (html: string, route: HandledRoute) => Promise<string>;
-export type RouteProcess = { (routes?: HandledRoute[]): Promise<HandledRoute[]>; [routeProcessPriority]?: number };
+export type RouteProcess = { (routes?: HandledRoute[]): Promise<HandledRoute[]>;[routeProcessPriority]?: number };
 export type RouteDiscoveryPlugin = (routes?: HandledRoute[]) => Promise<void>;
 export type AllDonePlugin = (routes?: HandledRoute[]) => Promise<void>;
-export type BeforeAllPlugin = { (): Promise<void | undefined | boolean>; [priority]?: number };
-export type FilePlugin = { (html: string, route?: HandledRoute): Promise<string>; [AlternateExtensionsForFilePlugin]?: string[] };
+export type BeforeAllPlugin = { (): Promise<void | undefined | boolean>;[priority]?: number };
+export type FilePlugin = { (html: string, route?: HandledRoute): Promise<string>;[AlternateExtensionsForFilePlugin]?: string[] };
 export type ScullySystemPlugin = PluginFunction;
 export type EnterprisePlugin = PluginFunction;
 

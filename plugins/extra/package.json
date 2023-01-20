@@ -1,0 +1,48 @@
+{
+  "name": "@scullyio/scully-plugin-extra",
+  "version": "3.0.0-beta.1",
+  "description": "Scully extra demo plugin",
+  "main": "./src/index.js",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/libs/plugins/extra"
+  },
+  "keywords": [
+    "angular",
+    "scully",
+    "seo",
+    "scully-plugin",
+    "plugin"
+  ]
+}

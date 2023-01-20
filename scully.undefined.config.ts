@@ -5,7 +5,8 @@
 
 import { ScullyConfig } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
-
+import '@scullyio/scully-plugin-extra';
+import '@scullyio/scully-plugin-extra-data';
 import '@scullyio/scully-plugin-puppeteer';
 
 export const config = {
@@ -14,18 +15,18 @@ export const config = {
   outDir: './dist/static/sample-blog',
 
   routes: {
-    // '/demo/:id': {
-    //   type: 'extra',
-    //   numberOfPages: 5
-    // },
-    // '/home/:topLevel': {
-    //   type: 'extraData',
-    //   data: [
-    //     { title: 'All routes in application', data: 'all' },
-    //     { title: 'Unpublished routes in application', data: 'unpublished' },
-    //     { title: 'Toplevel routes in application', data: '' }
-    //   ]
-    // },
+    '/demo/:id': {
+      type: 'extra',
+      numberOfPages: 5,
+    },
+    '/home/:topLevel': {
+      type: 'extraData',
+      data: [
+        { title: 'All routes in application', data: 'all' },
+        { title: 'Unpublished routes in application', data: 'unpublished' },
+        { title: 'Toplevel routes in application', data: '' },
+      ],
+    },
     '/user/:userId': {
       // Type is mandatory
       type: 'json',

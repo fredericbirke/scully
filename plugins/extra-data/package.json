@@ -1,0 +1,51 @@
+{
+  "name": "@scullyio/scully-plugin-extra-data",
+  "version": "3.0.0-beta.1",
+  "description": "Scully demo data plugin",
+  "main": "./src/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "tslib": "^1.13.0"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*",
+    "sharp": "^0.26.0"
+  },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/libs/plugins/from-data"
+  },
+  "type": "module",
+  "keywords": [
+    "angular",
+    "scully",
+    "seo",
+    "scully-plugin",
+    "plugin"
+  ]
+}

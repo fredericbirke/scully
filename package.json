@@ -23,6 +23,8 @@
         "./core/cli:build",
         "./core/plugins/puppeteer:build",
         "./plugins/base-href-rewrite:build",
+        "./plugins/extra:build",
+        "./plugins/extra-data:build",
         "build:ngLib",
         "build:sampleBlog"
       ]
@@ -90,7 +92,7 @@
     "core/cli",
     "core/ng-lib",
     "core/plugins/puppeteer",
-    "plugins/base-href-rewrite"
+    "plugins/*"
   ],
   "lint-staged": {
     "*.{js,ts,html,scss,md,json}": [
