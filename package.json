@@ -25,6 +25,7 @@
         "./plugins/base-href-rewrite:build",
         "./plugins/extra:build",
         "./plugins/extra-data:build",
+        "./plugins/docs-link-update:build",
         "build:ngLib",
         "build:sampleBlog"
       ]

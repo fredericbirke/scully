@@ -11,7 +11,7 @@ export interface RoutePlugin {
   [configValidator]?: ConfigValidator | undefined;
 };
 export type PluginFunction = (...args: any[]) => any;
-export type postProcessByDomPlugin = (dom?: JSDOM, route?: HandledRoute) => Promise<JSDOM>;
+export type postProcessByDomPlugin = (dom: JSDOM, route: HandledRoute) => Promise<JSDOM>;
 export type postProcessByHtmlPlugin = (html: string, route: HandledRoute) => Promise<string>;
 export type RouteProcess = { (routes?: HandledRoute[]): Promise<HandledRoute[]>;[routeProcessPriority]?: number };
 export type RouteDiscoveryPlugin = (routes?: HandledRoute[]) => Promise<void>;

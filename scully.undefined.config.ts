@@ -5,6 +5,7 @@
 
 import { ScullyConfig } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
+import { docLink } from '@scullyio/scully-plugin-docs-link-update';
 import '@scullyio/scully-plugin-extra';
 import '@scullyio/scully-plugin-extra-data';
 import '@scullyio/scully-plugin-puppeteer';
@@ -88,7 +89,7 @@ export const config = {
     },
     '/blog/:slug': {
       type: 'contentFolder',
-      // postRenderers: [docLink],
+      postRenderers: [docLink],
       slug: {
         folder: './tests/assets/blog-files',
       },
