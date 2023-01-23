@@ -6,6 +6,7 @@
 import { ScullyConfig } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
 import { docLink } from '@scullyio/scully-plugin-docs-link-update';
+import { copyToClipboard } from '@scullyio/scully-plugin-copy-to-clipboard';
 import '@scullyio/scully-plugin-extra';
 import '@scullyio/scully-plugin-extra-data';
 import '@scullyio/scully-plugin-puppeteer';
@@ -14,7 +15,7 @@ export const config = {
   projectName: 'sample-blog',
   proxyConfig: 'proxy.conf.cjs',
   outDir: './dist/static/sample-blog',
-
+  defaultPostRenderers: [copyToClipboard],
   routes: {
     '/demo/:id': {
       type: 'extra',

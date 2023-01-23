@@ -26,6 +26,7 @@
         "./plugins/extra:build",
         "./plugins/extra-data:build",
         "./plugins/docs-link-update:build",
+        "./plugins/copy-to-clipboard:build",
         "build:ngLib",
         "build:sampleBlog"
       ]

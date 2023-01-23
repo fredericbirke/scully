@@ -1,0 +1,48 @@
+{
+  "name": "@scullyio/scully-plugin-copy-to-clipboard",
+  "version": "3.0.0-beta.1",
+  "main": "./src/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*",
+    "jsdom": "^21.0.0"
+  },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/libs/plugins/copy-to-clipboard"
+  },
+  "type": "module",
+  "keywords": [
+    "angular",
+    "scully",
+    "prismjs",
+    "copy-to-clipboard",
+    "scully-plugin",
+    "plugin"
+  ]
+}
