@@ -21,7 +21,10 @@ class NoScriptComponent {
 
   users$ = this.tss.useScullyTransferState(
     'noScriptUser',
-    this.http.get<User[]>(`/api/users`).pipe(map((users) => users.map((user) => ({ name: user.name })))),
+    this.http.get<User[]>(`/api/users`).pipe(
+      map((users) => users.map((user) => ({ name: user.name }))),
+      map((users) => users.slice(0, 10)),
+    ),
   );
 }
 

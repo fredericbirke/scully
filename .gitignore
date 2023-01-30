@@ -61,3 +61,4 @@ bs.sh
 consoleProxy.ts
 .angular
 *.tgz
+tests/sample-blog/src/assets/scully-routes.json

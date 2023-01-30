@@ -32,8 +32,7 @@
     "tslib": "^1.13.0"
   },
   "peerDependencies": {
-    "@scullyio/scully": "*",
-    "sharp": "^0.26.0"
+    "@scullyio/scully": "*"
   },
   "repository": {
     "type": "GIT",

@@ -9,7 +9,9 @@ import { docLink } from '@scullyio/scully-plugin-docs-link-update';
 import { copyToClipboard } from '@scullyio/scully-plugin-copy-to-clipboard';
 import '@scullyio/scully-plugin-extra';
 import '@scullyio/scully-plugin-extra-data';
+import '@scullyio/scully-plugin-remove-scripts';
 import '@scullyio/scully-plugin-puppeteer';
+import { removeScripts } from '@scullyio/scully-plugin-remove-scripts';
 
 export const config = {
   projectName: 'sample-blog',
@@ -113,12 +115,12 @@ export const config = {
     },
     '/basehref/rewritten': {
       type: 'default',
-      // postRenderers: [baseHrefRewrite],
+      postRenderers: [baseHrefRewrite],
       baseHref: '/basehref/rewritten/',
     },
     '/basehref/removed': {
       type: 'default',
-      // postRenderers: [baseHrefRewrite],
+      postRenderers: [baseHrefRewrite],
       baseHref: '/basehref/removed/',
     },
     // '/test/fakeBase': {
@@ -126,7 +128,7 @@ export const config = {
     // },
     '/noScript': {
       type: 'default',
-      // postRenderers: [removeScripts]
+      postRenderers: [removeScripts],
     },
     // '/rawRoute': {
     //   type: 'rawTest',
