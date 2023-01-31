@@ -1,0 +1,49 @@
+{
+  "name": "@scullyio/scully-plugin-critical-css",
+  "version": "3.0.0-beta.1",
+  "dependencies": {
+    "critical": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*"
+  },
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/libs/plugins/scully-plugin-critical-css"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts",
+        "tsconfig.lib.json",
+        "package.json"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "angular",
+    "scully",
+    "seo",
+    "scully-plugin",
+    "plugin",
+    "CSS-above-the-fold"
+  ]
+}

@@ -11,13 +11,14 @@ import '@scullyio/scully-plugin-extra';
 import '@scullyio/scully-plugin-extra-data';
 import '@scullyio/scully-plugin-remove-scripts';
 import '@scullyio/scully-plugin-puppeteer';
+import { criticalCSS } from '@scullyio/scully-plugin-critical-css';
 import { removeScripts } from '@scullyio/scully-plugin-remove-scripts';
 
 export const config = {
   projectName: 'sample-blog',
   proxyConfig: 'proxy.conf.cjs',
   outDir: './dist/static/sample-blog',
-  defaultPostRenderers: [copyToClipboard],
+  defaultPostRenderers: [copyToClipboard, criticalCSS],
   routes: {
     '/demo/:id': {
       type: 'extra',
