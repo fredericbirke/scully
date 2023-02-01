@@ -14,9 +14,11 @@
   "scripts": {
     "build": "wireit",
     "build:ngLib": "wireit",
+    "build:platformServer": "wireit",
     "build:sampleBlog": "wireit",
     "serve:sampleBlog": "wireit",
     "scully": "wireit",
+    "symlinks": "npx symlink-dir ./dist/scullyio/platform-server node_modules/@scullyio/platform-server && npx symlink-dir ./dist/scullyio/ng-lib node_modules/@scullyio/ng-lib",
     "prepare": "git config core.hooksPath .git-hooks"
   },
   "wireit": {
@@ -32,6 +34,7 @@
         "./plugins/extra:build",
         "./plugins/remove-scripts:build",
         "build:ngLib",
+        "build:platformServer",
         "build:sampleBlog"
       ]
     },
@@ -47,6 +50,23 @@
       ],
       "output": [
         "dist/scullyio/ng-lib"
+      ]
+    },
+    "build:platformServer": {
+      "command": "ng build @scullyio/platform-server --configuration production",
+      "files": [
+        "./core/platform-server/src/**",
+        "./core/platform-server/package.json",
+        "./core/platform-server/ng-package.json",
+        "./core/platform-server/tsconfig.lib.json",
+        "./core/platform-server/README.md",
+        "angular.json"
+      ],
+      "output": [
+        "dist/scullyio/platform-server"
+      ],
+      "dependencies": [
+        "build:ngLib"
       ]
     },
     "build:sampleBlog": {
@@ -76,28 +96,29 @@
     "scully": {
       "command": "scully --RSD",
       "dependencies": [
-        "build"
+        "build",
+        "symlinks"
       ]
     }
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.0.4",
-    "@angular/common": "^15.0.4",
-    "@angular/compiler": "^15.0.4",
-    "@angular/core": "^15.0.4",
-    "@angular/forms": "^15.0.4",
-    "@angular/platform-browser": "^15.0.4",
-    "@angular/platform-browser-dynamic": "^15.0.4",
-    "@angular/router": "^15.0.4",
+    "@angular/animations": "^15.2.0-next.2",
+    "@angular/common": "^15.2.0-next.2",
+    "@angular/compiler": "^15.2.0-next.2",
+    "@angular/core": "^15.2.0-next.2",
+    "@angular/forms": "^15.2.0-next.2",
+    "@angular/platform-browser": "^15.2.0-next.2",
+    "@angular/platform-browser-dynamic": "^15.2.0-next.2",
+    "@angular/router": "^15.2.0-next.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.4.1",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.0.4",
-    "@angular/cli": "~15.0.5",
-    "@angular/compiler-cli": "^15.0.4",
+    "@angular-devkit/build-angular": "^15.2.0-next.2",
+    "@angular/cli": "~15.2.0-next.2",
+    "@angular/compiler-cli": "^15.2.0-next.2",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-angular": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
@@ -107,12 +128,14 @@
     "lint-staged": "^13.1.0",
     "ng-packagr": "^15.0.0",
     "prettier": "^2.8.2",
+    "symlink-dir": "^5.1.0",
     "typescript": "~4.8.2",
     "wireit": "^0.9.3"
   },
   "workspaces": [
     "core/cli",
     "core/ng-lib",
+    "core/platform-server",
     "core/plugins/*",
     "plugins/*"
   ],

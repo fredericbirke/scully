@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ManualIdleComponent } from './manual-idle.component';
+import { ManualIdleComponent } from './manual-idle.component.js';
 
 const routes: Routes = [{ path: '', component: ManualIdleComponent }];
 

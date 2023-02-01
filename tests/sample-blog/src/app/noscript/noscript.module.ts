@@ -4,7 +4,7 @@ import { Component, inject, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ScullyLibModule, TransferStateService } from '@scullyio/ng-lib';
 import { map } from 'rxjs';
-import { User } from '../user/user.component';
+import { User } from '../user/user.component.js';
 
 @Component({
   template: `

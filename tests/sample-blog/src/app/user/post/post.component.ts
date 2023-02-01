@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { pluck, shareReplay, switchMap, catchError, tap, filter, map } from 'rxjs';
-import { Post } from '../posts/posts.component';
+import { Post } from '../posts/posts.component.js';
 import { isScullyGenerated, TransferStateService } from '@scullyio/ng-lib';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ExcludeComponent } from './exclude.component';
+import { ExcludeComponent } from './exclude.component.js';
 
 describe('ExcludeComponent', () => {
   let component: ExcludeComponent;

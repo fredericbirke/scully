@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { StaticComponent } from './static.component';
+import { StaticComponent } from './static.component.js';
 
 describe('StaticComponent', () => {
   let component: StaticComponent;

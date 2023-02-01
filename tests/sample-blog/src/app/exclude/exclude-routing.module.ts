@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ExcludeComponent } from './exclude.component';
+import { ExcludeComponent } from './exclude.component.js';
 
 const routes: Routes = [
   { path: 'present', component: ExcludeComponent },

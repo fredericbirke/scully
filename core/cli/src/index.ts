@@ -35,3 +35,4 @@ export { getConfig as getMyConfig, setConfig as setMyConfig };
 export { Deferred } from './lib/utils/platform-server/deferred.js';
 
 export { captureException };
+export { workerMessages$ } from './lib/utils/procesmanager/startWorkerListener.js';

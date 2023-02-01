@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { ContentComponent } from './content.component';
+import { ContentComponent } from './content.component.js';
 import { CommonModule } from '@angular/common';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { Routes, RouterModule } from '@angular/router';

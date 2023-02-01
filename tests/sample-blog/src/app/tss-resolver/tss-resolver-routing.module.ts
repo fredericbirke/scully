@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TssResolverComponent } from './tss-resolver.component';
-import { UserResolver } from './user.resolver';
+import { TssResolverComponent } from './tss-resolver.component.js';
+import { UserResolver } from './user.resolver.js';
 
 const routes: Routes = [
   {

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TssResolverComponent } from './tss-resolver.component';
+import { TssResolverComponent } from './tss-resolver.component.js';
 
 describe('TssResolverComponent', () => {
   let component: TssResolverComponent;

@@ -91,6 +91,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "paths": {
       "@scullyio/ng-lib": ["dist/scullyio/ng-lib"],
+      "@scullyio/platform-server": ["dist/scullyio/platform-server"],
       "@scullyio/scully": ["./core/cli"]
     }
   }

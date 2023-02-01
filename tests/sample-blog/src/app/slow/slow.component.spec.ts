@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { SlowComponent } from './slow.component';
+import { SlowComponent } from './slow.component.js';
 
 describe('SlowComponent', () => {
   let component: SlowComponent;

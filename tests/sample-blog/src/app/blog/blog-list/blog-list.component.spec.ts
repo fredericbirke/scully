@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { BlogListComponent } from './blog-list.component';
+import { BlogListComponent } from './blog-list.component.js';
 
 describe('BlogListComponent', () => {
   let component: BlogListComponent;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { StaticComponent } from './static.component';
+import { StaticComponent } from './static.component.js';
 
 const routes: Routes = [
   { path: ':topLevel', component: StaticComponent },

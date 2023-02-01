@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ManualIdleComponent } from './manual-idle.component';
+import { ManualIdleComponent } from './manual-idle.component.js';
 
 describe('ManualIdleComponent', () => {
   let component: ManualIdleComponent;

@@ -107,16 +107,16 @@ function getFiles(dir, ext = 'js') {
  */
 export function enableSPS() {
   /** check if we did start up in the correct node "mode" */
-  if (process.execArgv.includes('--experimental-specifier-resolution=node') === false) {
-    logError(`Scully Platform Server only works Nodejs flag "--experimental-specifier-resolution=node"`);
-    process.exit(0);
-  }
+  // if (process.execArgv.includes('--experimental-specifier-resolution=node') === false) {
+  //   logError(`Scully Platform Server only works Nodejs flag "--experimental-specifier-resolution=node"`);
+  //   process.exit(0);
+  // }
   /** do the setup (compile angular app etc) */
   registerPlugin('beforeAll', 'compileAngularApp', plugin);
   /** replace the render plugin with the SPS specific render plugin */
   registerPlugin('scullySystem', renderPlugin, findPlugin(SPSRenderer), undefined, { replaceExistingPlugin: true });
   /** register dummy routeRenderer, to prevent loading PPT by default */
-  registerPlugin('scullySystem', routeRenderer, async () => undefined);
+  registerPlugin('scullySystem', routeRenderer, async () => undefined, undefined, { replaceExistingPlugin: true });
   /** make sure tear-down of the workers happens */
   registerPlugin('allDone', 'exitAllWorkers', terminateAllPools);
 }

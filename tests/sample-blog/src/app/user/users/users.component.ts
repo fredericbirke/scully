@@ -3,7 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { isScullyGenerated, TransferStateService } from '@scullyio/ng-lib';
 import { of } from 'rxjs';
 import { catchError, map, shareReplay, tap } from 'rxjs';
-import { User } from '../user.component';
+import { User } from '../user.component.js';
 
 @Component({
   selector: 'app-users',

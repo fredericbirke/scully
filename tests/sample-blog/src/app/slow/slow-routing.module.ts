@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SlowComponent } from './slow.component';
+import { SlowComponent } from './slow.component.js';
 
 const routes: Routes = [{ path: '', component: SlowComponent }];
 
