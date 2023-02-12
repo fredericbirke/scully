@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "module": "es2020",
+    "outDir": "./lib",
+    "incremental": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "types": []
+  },
+  "exclude": ["**/*.spec.ts"],
+  "include": ["**/*.ts"]
+}

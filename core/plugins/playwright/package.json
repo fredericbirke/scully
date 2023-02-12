@@ -1,0 +1,52 @@
+{
+  "name": "@scullyio/scully-plugin-playwright",
+  "version": "3.0.0-beta.1",
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/scullyio/scully/tree/main/libs/plugins/scully-plugin-playwright"
+  },
+  "keywords": [
+    "angular",
+    "scully",
+    "seo",
+    "scully-plugin",
+    "plugin",
+    "playwright"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@scullyio/scully": "*",
+    "playwright": "^1.19.2",
+    "fs-extra": "^11.1.0",
+    "jsonc": "2.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "wireit"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsc -p tsconfig.json",
+      "files": [
+        "src/**/*.ts",
+        "tsconfig.lib.json",
+        "package.json"
+      ],
+      "output": [
+        "lib"
+      ],
+      "dependencies": [
+        "../../../core/cli:build"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  }
+}
