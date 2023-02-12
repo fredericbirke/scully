@@ -138,6 +138,82 @@
           }
         }
       }
+    },
+    "scully-docs": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "docs/scully-docs",
+      "sourceRoot": "docs/scully-docs/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
+          "options": {
+            "outputPath": "dist/docs/scully-docs",
+            "index": "docs/scully-docs/src/index.html",
+            "main": "docs/scully-docs/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "docs/scully-docs/tsconfig.app.json",
+            "assets": ["docs/scully-docs/src/favicon.ico", "docs/scully-docs/src/assets"],
+            "styles": ["docs/scully-docs/src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "scully-docs:build:production"
+            },
+            "development": {
+              "browserTarget": "scully-docs:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "scully-docs:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "tsConfig": "docs/scully-docs/tsconfig.spec.json",
+            "assets": ["docs/scully-docs/src/favicon.ico", "docs/scully-docs/src/assets"],
+            "styles": ["docs/scully-docs/src/styles.css"],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {

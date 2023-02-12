@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { pluck, shareReplay, switchMap, catchError, tap, filter, map } from 'rxjs';
 import { Post } from '../posts/posts.component.js';
@@ -12,6 +12,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./post.component.css'],
 })
 export class PostComponent implements OnInit {
+  private route = inject(ActivatedRoute);
+  private http = inject(HttpClient);
+  private transferState = inject(TransferStateService);
   postId$: Observable<number> = this.route.params.pipe(
     pluck('postId'),
     filter((val) => ![undefined, null].includes(val)),
@@ -37,8 +40,6 @@ export class PostComponent implements OnInit {
   post$ = isScullyGenerated()
     ? this.transferState.getState<Post>('post')
     : this.apiPosts$.pipe(tap((post) => this.transferState.setState('post', post)));
-
-  constructor(private route: ActivatedRoute, private http: HttpClient, private transferState: TransferStateService) {}
 
   ngOnInit() {}
 }

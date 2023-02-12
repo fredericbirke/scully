@@ -15,5 +15,5 @@
     "**/dist/**": true
   },
   "angular.enable-strict-mode-prompt": false,
-  "conventionalCommits.scopes": ["all", "scully", "ngLib", "plugins", "tests", "devops", "platform-server"]
+  "conventionalCommits.scopes": ["all", "scully", "ngLib", "plugins", "tests", "devops", "platform-server", "docs"]
 }

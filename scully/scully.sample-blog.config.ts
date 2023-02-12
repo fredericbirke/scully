@@ -50,7 +50,7 @@ export const config: Promise<ScullyConfig> = (async () => {
     projectName: 'sample-blog',
     /** outDir is where the static distribution files end up */
     outDir: './dist/static/sample-blog',
-    spsModulePath: './apps/sample-blog/src/app/app.sps.module.ts',
+    spsModulePath: './test/sample-blog/src/app/app.sps.module.ts',
 
     // distFolder: './dist/apps/sample-blog',
     // hostName: '0.0.0.0',
@@ -185,7 +185,7 @@ export const config: Promise<ScullyConfig> = (async () => {
       },
     },
     guessParserOptions: {
-      excludedFiles: ['apps/sample-blog/src/app/exclude/exclude-routing.module.ts'],
+      excludedFiles: ['test/sample-blog/src/app/exclude/exclude-routing.module.ts'],
     },
   } as ScullyConfig;
 })();

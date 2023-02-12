@@ -1,0 +1,1551 @@
+[
+  { "route": "/404" },
+  { "route": "/" },
+  {
+    "route": "/docs/Reference/command-line-options",
+    "title": "Command Line Options",
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "command-line-options.md"
+  },
+  {
+    "route": "/docs/Reference/command-line-options_es",
+    "title": "Opciones en línea de comandos",
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "command-line-options_es.md"
+  },
+  {
+    "route": "/docs/Reference/config",
+    "title": "Scully Config",
+    "lang": "en",
+    "position": 100,
+    "published": true,
+    "sourceFile": "config.md"
+  },
+  {
+    "route": "/docs/Reference/config_es",
+    "title": "Configuración de Scully",
+    "lang": "es",
+    "position": 100,
+    "published": true,
+    "sourceFile": "config_es.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/angular-v8",
+    "title": "Releasing an Angular v8.x.x Library",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "angular-v8.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/angular-v8_es",
+    "title": "Lanzamiento de una librería Angular v8.x.x",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "angular-v8_es.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/overview",
+    "title": "Legacy support",
+    "lang": "en",
+    "position": 900,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/overview_es",
+    "title": "Soporte heredado",
+    "lang": "es",
+    "position": 900,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/polyfills",
+    "title": "Polyfills",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "polyfills.md"
+  },
+  {
+    "route": "/docs/Reference/legacy-support/polyfills_es",
+    "title": "Polyfills",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "polyfills_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/idle-monitor-service",
+    "title": "IdleMonitorService",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "idle-monitor-service.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/idle-monitor-service_es",
+    "title": "IdleMonitorService",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "idle-monitor-service_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/overview",
+    "title": "Scully Library",
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/overview_es",
+    "title": "Librería Scully",
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/scully-content-component",
+    "title": "ScullyContentComponent",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "scully-content-component.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/scully-content-component_es",
+    "title": "ScullyContentComponent",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "scully-content-component_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/scully-routes-service",
+    "title": "ScullyRoutesService",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "scully-routes-service.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/scully-routes-service_es",
+    "title": "ScullyRoutesService",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "scully-routes-service_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/transfer-state-service",
+    "title": "TransferStateService",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "transfer-state-service.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/transfer-state-service_es",
+    "title": "TransferStateService",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "transfer-state-service_es.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/utility-methods",
+    "title": "Utility methods",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "utility-methods.md"
+  },
+  {
+    "route": "/docs/Reference/ngLib/utility-methods_es",
+    "title": "Métodos Útiles",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "utility-methods_es.md"
+  },
+  {
+    "route": "/docs/Reference/overview",
+    "title": "Reference",
+    "lang": "en",
+    "position": 200,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/overview_es",
+    "title": "Referencias",
+    "lang": "es",
+    "position": 200,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/adoc",
+    "title": "adoc Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "adoc.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/adoc_es",
+    "title": "Complemento adoc",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "adoc_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/contentFolder",
+    "title": "contentFolder Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "contentFolder.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/contentFolder_es",
+    "title": "Complemento contentFolder",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "contentFolder_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/criticalcss",
+    "title": "critical css Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "criticalcss.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/criticalcss_es",
+    "title": "critical css Plugin",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "criticalcss_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/flashPrevention",
+    "title": "flash prevention Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "flashPrevention.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/flashPrevention_es",
+    "title": "Plugin flash prevention",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "flashPrevention_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/ignored",
+    "title": "ignored Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "ignored.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/ignored_es",
+    "title": "Complemento `ignored`",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "ignored_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/json",
+    "title": "json Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "json.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/json_es",
+    "title": "Complemento json",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "json_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/md",
+    "title": "md Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "md.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/md_es",
+    "title": "Complemento md",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "md_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/overview",
+    "title": "Core Plugins",
+    "lang": "en",
+    "published": true,
+    "position": 100,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/overview_es",
+    "title": "Complementos principales",
+    "lang": "es",
+    "published": true,
+    "position": 100,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/router-",
+    "title": "router Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "router-.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/router-_es",
+    "title": "Complemento router",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "router-_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/router-render",
+    "title": "router render Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "router-render.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/router-render_es",
+    "title": "Complemento router-render",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "router-render_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/seoHrefOptimize",
+    "title": "seoHrefOptimise Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "seoHrefOptimize.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/built-in-plugins/seoHrefOptimize_es",
+    "title": "Complemento seoHrefOptimise",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "seoHrefOptimize_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/amp-css",
+    "title": "AMP CSS",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "amp-css.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/amp-css_es",
+    "title": "AMP CSS",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "amp-css_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/canonical",
+    "title": "Canonical Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "canonical.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/canonical_es",
+    "title": "Complemento Canónico",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "canonical_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/disableAngular",
+    "title": "disableAngular Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "disableAngular.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/disableAngular_es",
+    "title": "Complemento disableAngular",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "disableAngular_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/fouc",
+    "title": "fouc Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "fouc.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/fouc_es",
+    "title": "Complemento fouc",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "fouc_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/http404",
+    "title": "http404 Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "http404.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/http404_es",
+    "title": "Complemento http404",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "http404_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/lazyImages",
+    "title": "lazyImages Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "lazyImages.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/lazyImages_es",
+    "title": "Complemento lazyImages",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "lazyImages_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/mediumZoom",
+    "title": "mediumZoom Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "mediumZoom.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/mediumZoom_es",
+    "title": "Complemento RSS",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "mediumZoom_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/meetup",
+    "title": "Meetup Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "meetup.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/meetup_es",
+    "title": "Complemento Meetup",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "meetup_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/minifyHtml",
+    "title": "minifyHtml Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "minifyHtml.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/minifyHtml_es",
+    "title": "Complemento minifyHtml",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "minifyHtml_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/overview",
+    "title": "Community Plugins",
+    "published": true,
+    "lang": "en",
+    "position": 200,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/overview_es",
+    "title": "Complementos de la Comunidad",
+    "published": true,
+    "lang": "es",
+    "position": 200,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/page-title",
+    "title": "Page Title Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "page-title.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/page-title_es",
+    "title": "Complemento Titulo de Página",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "page-title_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/regex",
+    "title": "regex Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "regex.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/regex_es",
+    "title": "Complemento regex",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "regex_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/rss",
+    "title": "RSS Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "rss.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/rss_es",
+    "title": "Complemento RSS",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "rss_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/sitemap",
+    "title": "sitemap Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "sitemap.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/sitemap_es",
+    "title": "Complemento sitemap",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "sitemap_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/time-to-read",
+    "title": "time-to-read Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "time-to-read.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/time-to-read_es",
+    "title": "Complemento time-to-read",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "time-to-read_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/toc",
+    "title": "toc Table of Contents Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "toc.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/community-plugins/toc_es",
+    "title": "Complemento toc Tabla de Contenidos",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "toc_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/create-a-plugin-function",
+    "title": "Create",
+    "published": true,
+    "lang": "en",
+    "position": 130,
+    "sourceFile": "create-a-plugin-function.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/create-a-plugin-function_es",
+    "title": "Creación",
+    "published": true,
+    "lang": "es",
+    "position": 130,
+    "sourceFile": "create-a-plugin-function_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/overview",
+    "title": "Custom plugins",
+    "published": true,
+    "lang": "en",
+    "position": 130,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/overview_es",
+    "title": "Complementos personalizados",
+    "published": true,
+    "lang": "es",
+    "position": 130,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/register-a-new-plugin",
+    "title": "Register a New Plugin",
+    "published": true,
+    "lang": "en",
+    "position": 10,
+    "sourceFile": "register-a-new-plugin.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/register-a-new-plugin_es",
+    "title": "Registrar un Nuevo Complemento",
+    "published": true,
+    "lang": "es",
+    "position": 10,
+    "sourceFile": "register-a-new-plugin_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/use-a-custom-plugin",
+    "title": "Use a custom plugin",
+    "published": true,
+    "lang": "en",
+    "position": 130,
+    "sourceFile": "use-a-custom-plugin.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/custom-plugins/use-a-custom-plugin_es",
+    "title": "Usar un complemento personalizado",
+    "published": true,
+    "lang": "es",
+    "position": 130,
+    "sourceFile": "use-a-custom-plugin_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/overview",
+    "title": "Plugins",
+    "published": true,
+    "lang": "en",
+    "position": 120,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/overview_es",
+    "title": "Complementos",
+    "published": true,
+    "lang": "es",
+    "position": 120,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/allDone",
+    "title": "allDone Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "allDone.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/allDone_es",
+    "title": "Tipo de complemento allDone",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "allDone_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/beforeAll",
+    "title": "beforeAll Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "beforeAll.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/enterprise",
+    "title": "Enterprise Plugins",
+    "lang": "en",
+    "position": 501,
+    "published": true,
+    "sourceFile": "enterprise.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/enterprise_es",
+    "title": "Complementos empresariales",
+    "lang": "es",
+    "position": 501,
+    "published": true,
+    "sourceFile": "enterprise_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/fileHandler",
+    "title": "fileHandler Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "fileHandler.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/fileHandler_es",
+    "title": "Tipo de complemento fileHandler",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "fileHandler_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/overview",
+    "title": "Plugin types",
+    "published": true,
+    "lang": "en",
+    "position": 10,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/overview_es",
+    "title": "Tipos de complementos",
+    "published": true,
+    "lang": "es",
+    "position": 10,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/postProcessByDom",
+    "title": "postProcessByDom Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "postProcessByDom.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/postProcessByDom_es",
+    "title": "Complemento de typo postProcessByDom",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "postProcessByDom_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/postProcessByHtml",
+    "title": "postProcessByHtml Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "postProcessByHtml.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/route-process",
+    "title": "Route Process Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "route-process.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/route-process_es",
+    "title": "Tipo de complemento routeProcess",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "route-process_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/routeDiscoveryDone",
+    "title": "routeDiscoveryDone Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "routeDiscoveryDone.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/routeDiscoveryDone_es",
+    "title": "Tipo de complemento routeDiscoveryDone",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "routeDiscoveryDone_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/routeRenderer",
+    "title": "the routeRenderer plugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "routeRenderer.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/router",
+    "title": "router Plugin Type",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "router.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/router_es",
+    "title": "Complemento del tipo router",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "router_es.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/system",
+    "title": "System Plugins",
+    "lang": "en",
+    "position": 500,
+    "published": true,
+    "sourceFile": "system.md"
+  },
+  {
+    "route": "/docs/Reference/plugins/types/system_es",
+    "title": "Sistema de complemento",
+    "lang": "es",
+    "position": 500,
+    "published": true,
+    "sourceFile": "system_es.md"
+  },
+  {
+    "route": "/docs/Reference/routRenders/overview",
+    "title": "RouteRender plugins",
+    "published": true,
+    "lang": "en",
+    "position": 120,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/routRenders/playwright",
+    "title": "Playwright",
+    "published": true,
+    "lang": "en",
+    "position": 10,
+    "sourceFile": "playwright.md"
+  },
+  {
+    "route": "/docs/Reference/routRenders/sps",
+    "title": "SPS Scully Platform Server",
+    "published": true,
+    "lang": "en",
+    "position": 10,
+    "sourceFile": "sps.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-blog-config",
+    "title": "create blog config",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "create-blog-config.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-blog-config_es",
+    "title": "Creación de una configuración de un blog",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "create-blog-config_es.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-markdown-files-and-skeleton",
+    "title": "create markdown files and skeleton",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "create-markdown-files-and-skeleton.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-markdown-files-and-skeleton_es",
+    "title": "Crear archivos markdown y skeleton",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "create-markdown-files-and-skeleton_es.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-scully-files-with-ng-add",
+    "title": "create scully files with ng add",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "create-scully-files-with-ng-add.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/create-scully-files-with-ng-add_es",
+    "title": "Crear archivos de Scully con ng add",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "create-scully-files-with-ng-add_es.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/overview",
+    "title": "Scully Schematics",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/schematics/overview_es",
+    "title": "Schematics de Scully",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/findPlugin",
+    "title": "findPlugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "findPlugin.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/findPlugin_es",
+    "title": "findPlugin",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "findPlugin_es.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/overview",
+    "title": "Scully api",
+    "lang": "en",
+    "position": 150,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/overview_es",
+    "title": "API de Scully",
+    "lang": "es",
+    "position": 150,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/registerPlugin",
+    "title": "registerPlugin",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "registerPlugin.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/registerPlugin_es",
+    "title": "registerPlugin",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "registerPlugin_es.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/utils",
+    "title": "Scully util functions",
+    "lang": "en",
+    "position": 170,
+    "sourceFile": "utils.md"
+  },
+  {
+    "route": "/docs/Reference/scully-api/utils_es",
+    "title": "Funciones útiles de Scully",
+    "lang": "es",
+    "position": 170,
+    "sourceFile": "utils_es.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/overview",
+    "title": "3rth Party integrations",
+    "published": true,
+    "lang": "en",
+    "position": 170,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/overview_es",
+    "title": "Integraciones de terceros",
+    "published": true,
+    "lang": "es",
+    "position": 170,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/prism-js",
+    "title": "Syntax Highlighting using PrismJS",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "prism-js.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/prism-js_es",
+    "title": "Sintaxis Highlighting usando PrismJS",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "prism-js_es.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/scully-publish",
+    "title": "Scully Publish Github Action",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "scully-publish.md"
+  },
+  {
+    "route": "/docs/Reference/utilities/scully-publish_es",
+    "title": "Publicando Scully con Github Action",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "scully-publish_es.md"
+  },
+  {
+    "route": "/docs/community/code-of-conduct",
+    "title": "Code of Conduct",
+    "lang": "en",
+    "order": 999,
+    "position": 101,
+    "published": true,
+    "sourceFile": "code-of-conduct.md"
+  },
+  {
+    "route": "/docs/community/code-of-conduct_es",
+    "title": "Código de conducta",
+    "lang": "es",
+    "order": 999,
+    "position": 101,
+    "published": true,
+    "sourceFile": "code-of-conduct_es.md"
+  },
+  {
+    "route": "/docs/community/contributing",
+    "title": "Contributing",
+    "lang": "en",
+    "published": true,
+    "position": 100,
+    "sourceFile": "contributing.md"
+  },
+  {
+    "route": "/docs/community/contributing_es",
+    "title": "Contribuyendo",
+    "lang": "es",
+    "published": true,
+    "position": 100,
+    "sourceFile": "contributing_es.md"
+  },
+  {
+    "route": "/docs/community/issues",
+    "title": "Issues",
+    "lang": "en",
+    "published": true,
+    "position": 100,
+    "sourceFile": "issues.md"
+  },
+  {
+    "route": "/docs/community/issues_es",
+    "title": "Problemas",
+    "lang": "es",
+    "published": true,
+    "position": 100,
+    "sourceFile": "issues_es.md"
+  },
+  {
+    "route": "/docs/community/overview",
+    "title": "Community",
+    "lang": "en",
+    "published": true,
+    "position": 900,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/community/overview_es",
+    "title": "Comunidad",
+    "lang": "es",
+    "published": true,
+    "position": 900,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/community/showcase",
+    "title": "Showcase",
+    "lang": "en",
+    "published": true,
+    "position": 100,
+    "sourceFile": "showcase.md"
+  },
+  {
+    "route": "/docs/community/showcase_es",
+    "title": "Casos de éxito",
+    "lang": "es",
+    "published": true,
+    "position": 100,
+    "sourceFile": "showcase_es.md"
+  },
+  {
+    "route": "/docs/community/sponsors",
+    "title": "Sponsors",
+    "lang": "en",
+    "published": true,
+    "position": 901,
+    "sourceFile": "sponsors.md"
+  },
+  {
+    "route": "/docs/community/sponsors_es",
+    "title": "Sponsors",
+    "lang": "es",
+    "published": true,
+    "position": 901,
+    "sourceFile": "sponsors_es.md"
+  },
+  {
+    "route": "/docs/community/starters",
+    "title": "Starters",
+    "lang": "en",
+    "published": true,
+    "position": 98,
+    "sourceFile": "starters.md"
+  },
+  {
+    "route": "/docs/community/starters_es",
+    "title": "Comenzar",
+    "lang": "es",
+    "published": true,
+    "position": 98,
+    "sourceFile": "starters_es.md"
+  },
+  {
+    "route": "/docs/community/support",
+    "title": "Support",
+    "lang": "en",
+    "published": true,
+    "position": 100,
+    "sourceFile": "support.md"
+  },
+  {
+    "route": "/docs/community/support_es",
+    "title": "Soporte",
+    "lang": "es",
+    "published": true,
+    "position": 100,
+    "sourceFile": "support_es.md"
+  },
+  {
+    "route": "/docs/concepts/handled-routes",
+    "title": "Handled Routes",
+    "lang": "en",
+    "position": 100,
+    "published": true,
+    "sourceFile": "handled-routes.md"
+  },
+  {
+    "route": "/docs/concepts/handled-routes_es",
+    "title": "Rutas controladas",
+    "lang": "es",
+    "position": 100,
+    "published": true,
+    "sourceFile": "handled-routes_es.md"
+  },
+  {
+    "route": "/docs/concepts/overview",
+    "title": "Concepts",
+    "lang": "en",
+    "position": 20,
+    "published": true,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/concepts/overview_es",
+    "title": "Conceptos",
+    "lang": "es",
+    "position": 20,
+    "published": true,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/concepts/plugins",
+    "title": "Plugins",
+    "lang": "en",
+    "position": 100,
+    "published": true,
+    "sourceFile": "plugins.md"
+  },
+  {
+    "route": "/docs/concepts/plugins_es",
+    "title": "Complementos",
+    "lang": "es",
+    "position": 100,
+    "published": true,
+    "sourceFile": "plugins_es.md"
+  },
+  {
+    "route": "/docs/concepts/process",
+    "title": "The Scully process",
+    "lang": "en",
+    "position": 10,
+    "published": true,
+    "sourceFile": "process.md"
+  },
+  {
+    "route": "/docs/concepts/process_es",
+    "title": "El Proceso Scully",
+    "lang": "es",
+    "position": 10,
+    "published": true,
+    "sourceFile": "process_es.md"
+  },
+  {
+    "route": "/docs/concepts/unhandled-routes",
+    "title": "Unhandled Routes",
+    "lang": "en",
+    "position": 20,
+    "published": true,
+    "sourceFile": "unhandled-routes.md"
+  },
+  {
+    "route": "/docs/concepts/unhandled-routes_es",
+    "title": "Rutas no controladas",
+    "lang": "es",
+    "position": 20,
+    "published": true,
+    "sourceFile": "unhandled-routes_es.md"
+  },
+  {
+    "route": "/docs/consutancy",
+    "title": "Scully consultancy",
+    "published": true,
+    "lang": "en",
+    "position": 2000,
+    "sourceFile": "consutancy.md"
+  },
+  {
+    "route": "/docs/faq",
+    "title": "Frequently Asked Questions",
+    "published": true,
+    "lang": "en",
+    "position": 200,
+    "sourceFile": "faq.md"
+  },
+  {
+    "route": "/docs/faq_es",
+    "title": "Preguntas Frecuentes",
+    "published": true,
+    "lang": "es",
+    "position": 200,
+    "sourceFile": "faq_es.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/add-blog-support",
+    "title": "Adding blog support",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "add-blog-support.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/add-blog-support_es",
+    "title": "Agregar soporte para Blogs",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "add-blog-support_es.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/generate-new-blog-posts",
+    "title": "Generating new blog posts",
+    "published": true,
+    "lang": "en",
+    "position": 200,
+    "sourceFile": "generate-new-blog-posts.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/generate-new-blog-posts_es",
+    "title": "Generando nuevos artículos para el blog",
+    "published": true,
+    "lang": "es",
+    "position": 200,
+    "sourceFile": "generate-new-blog-posts_es.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/overview",
+    "title": "Create a blog",
+    "lang": "en",
+    "position": 20,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/overview_es",
+    "title": "Crear un blog",
+    "lang": "es",
+    "position": 20,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/use-blog-post-data-in-template",
+    "title": "Using blog data in an Angular template",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "use-blog-post-data-in-template.md"
+  },
+  {
+    "route": "/docs/learn/create-a-blog/use-blog-post-data-in-template_es",
+    "title": "Usando datos del blog en la plantilla de Angular",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "use-blog-post-data-in-template_es.md"
+  },
+  {
+    "route": "/docs/learn/create-a-plugin/create-a-plugin",
+    "title": "Create a Custom Scully Plugin",
+    "lang": "en",
+    "position": 20,
+    "published": true,
+    "sourceFile": "create-a-plugin.md"
+  },
+  {
+    "route": "/docs/learn/create-a-plugin/create-a-plugin_es",
+    "title": "Crear un Scully Plugin Personalizado",
+    "lang": "en",
+    "position": 20,
+    "sourceFile": "create-a-plugin_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/building",
+    "title": "Building",
+    "published": true,
+    "lang": "en",
+    "position": 30,
+    "sourceFile": "building.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/building_es",
+    "title": "Creando",
+    "published": true,
+    "lang": "es",
+    "position": 30,
+    "sourceFile": "building_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/installation",
+    "title": "Installation",
+    "lang": "en",
+    "position": 20,
+    "published": true,
+    "sourceFile": "installation.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/installation_es",
+    "title": "Instalación",
+    "lang": "es",
+    "position": 20,
+    "published": true,
+    "sourceFile": "installation_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/manualInstallation",
+    "title": "Manual Installation",
+    "lang": "en",
+    "position": 25,
+    "published": true,
+    "sourceFile": "manualInstallation.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/overview",
+    "title": "Getting started",
+    "lang": "en",
+    "position": 10,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/overview_es",
+    "title": "Cómo empezar",
+    "lang": "es",
+    "position": 10,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/requirements",
+    "title": "Minimal setup required",
+    "published": true,
+    "lang": "en",
+    "position": 90,
+    "sourceFile": "requirements.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/requirements_es",
+    "title": "Configuración mínima requerida",
+    "published": true,
+    "lang": "es",
+    "position": 90,
+    "sourceFile": "requirements_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/serving",
+    "title": "Serving",
+    "published": true,
+    "lang": "en",
+    "position": 40,
+    "sourceFile": "serving.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/serving_es",
+    "title": "Ejecutando el servidor de Scully",
+    "published": true,
+    "lang": "es",
+    "position": 40,
+    "sourceFile": "serving_es.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/tips-for-testing",
+    "title": "Tips",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "tips-for-testing.md"
+  },
+  {
+    "route": "/docs/learn/getting-started/tips-for-testing_es",
+    "title": "Consejos",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "tips-for-testing_es.md"
+  },
+  {
+    "route": "/docs/learn/introduction",
+    "title": "Learn",
+    "lang": "en",
+    "position": 10,
+    "published": true,
+    "sourceFile": "introduction.md"
+  },
+  {
+    "route": "/docs/learn/introduction_es",
+    "title": "Introducción",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "introduction_es.md"
+  },
+  {
+    "route": "/docs/learn/overview",
+    "title": "Learn",
+    "lang": "en",
+    "position": 10,
+    "published": true,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/learn/overview_es",
+    "title": "Learn",
+    "lang": "es",
+    "position": 10,
+    "published": true,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/learn/use-netlify-cms/use-netlify-cms",
+    "title": "Use Netlify CMS with Your Scully Site",
+    "lang": "en",
+    "position": 20,
+    "sourceFile": "use-netlify-cms.md"
+  },
+  {
+    "route": "/docs/learn/use-netlify-cms/use-netlify-cms_es",
+    "title": "Usar Netlify CMS con Tu Sitio Scully",
+    "lang": "es",
+    "position": 20,
+    "sourceFile": "use-netlify-cms_es.md"
+  },
+  {
+    "route": "/docs/overview",
+    "title": "Scully Documentation",
+    "published": true,
+    "lang": "en",
+    "position": 100,
+    "sourceFile": "overview.md"
+  },
+  {
+    "route": "/docs/overview_es",
+    "title": "Scully Documentation",
+    "published": true,
+    "lang": "es",
+    "position": 100,
+    "sourceFile": "overview_es.md"
+  },
+  {
+    "route": "/docs/roadmap",
+    "title": "Scully roadmap",
+    "published": true,
+    "lang": "en",
+    "position": 5,
+    "sourceFile": "roadmap.md"
+  },
+  { "route": "/docs" },
+  { "route": "/ngconf" },
+  { "route": "/scully-user" },
+  { "route": "/consultancy" }
+]

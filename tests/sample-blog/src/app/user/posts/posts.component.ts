@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { isScullyGenerated, TransferStateService } from '@scullyio/ng-lib';
 import { Observable, of } from 'rxjs';
@@ -18,10 +18,14 @@ export interface Post {
   styleUrls: ['./posts.component.css'],
 })
 export class PostsComponent implements OnInit {
+  private route = inject(ActivatedRoute);
+  private http = inject(HttpClient);
+  private transferState = inject(TransferStateService);
+
   userId$: Observable<number> = this.route.params.pipe(
-    pluck('userId'),
-    filter((val) => ![undefined, null].includes(val)),
-    map((val) => parseInt(val, 10)),
+    map((param: { [key: string]: string | undefined }) => param['id']),
+    filter((val: any) => !!(val != null)),
+    map((val: string) => parseInt(val, 10)),
     shareReplay(1),
   );
 
@@ -45,8 +49,6 @@ export class PostsComponent implements OnInit {
   posts$: Observable<Post[]> = isScullyGenerated()
     ? this.transferState.getState('posts')
     : this.apiPosts$.pipe(tap((posts) => this.transferState.setState('posts', posts)));
-
-  constructor(private route: ActivatedRoute, private http: HttpClient, private transferState: TransferStateService) {}
 
   ngOnInit() {}
 }

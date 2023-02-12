@@ -16,8 +16,11 @@
     "build:ngLib": "wireit",
     "build:platformServer": "wireit",
     "build:sampleBlog": "wireit",
+    "build:scullyDocs": "wireit",
     "serve:sampleBlog": "wireit",
+    "serve:docs": "wireit",
     "scully": "wireit",
+    "scullyDocs": "wireit",
     "symlinks": "npx symlink-dir ./dist/scullyio/platform-server node_modules/@scullyio/platform-server && npx symlink-dir ./dist/scullyio/ng-lib node_modules/@scullyio/ng-lib",
     "prepare": "git config core.hooksPath .git-hooks"
   },
@@ -36,7 +39,8 @@
         "./plugins/remove-scripts:build",
         "build:ngLib",
         "build:platformServer",
-        "build:sampleBlog"
+        "build:sampleBlog",
+        "build:scullyDocs"
       ]
     },
     "build:ngLib": {
@@ -81,11 +85,37 @@
         "dist/sample-blog"
       ],
       "dependencies": [
-        "build:ngLib"
+        "build:ngLib",
+        "build:platformServer"
+      ]
+    },
+    "build:scullyDocs": {
+      "command": "ng build scully-docs --configuration production",
+      "files": [
+        "./docs/scully-docs/src/*",
+        "./docs/scully-docs/",
+        "angular.json"
+      ],
+      "output": [
+        "dist/scully-docs"
+      ],
+      "dependencies": [
+        "build:ngLib",
+        "build:platformServer"
       ]
     },
     "serve:sampleBlog": {
-      "command": "scully serve --tds  --404=index --noCache --proxy proxy.conf.cjs --RSD",
+      "command": "node node_modules/.bin/scully serve --tds  --404=index --noCache --proxy proxy.conf.cjs --RSD",
+      "service": true,
+      "dependencies": [
+        {
+          "script": "build",
+          "cascade": false
+        }
+      ]
+    },
+    "serve:docs": {
+      "command": "node node_modules/.bin/scully serve --project scully-docs --404=index --noCache",
       "service": true,
       "dependencies": [
         {
@@ -95,7 +125,14 @@
       ]
     },
     "scully": {
-      "command": "scully --RSD",
+      "command": "node node_modules/.bin/scully --tds  --404=index --noCache --proxy proxy.conf.cjs --RSD",
+      "dependencies": [
+        "build",
+        "symlinks"
+      ]
+    },
+    "scullyDocs": {
+      "command": "node --experimental-specifier-resolution=node node_modules/.bin/scully --RSD --project scully-docs --404=index --TS",
       "dependencies": [
         "build",
         "symlinks"
@@ -104,22 +141,23 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.2.0-next.2",
-    "@angular/common": "^15.2.0-next.2",
-    "@angular/compiler": "^15.2.0-next.2",
-    "@angular/core": "^15.2.0-next.2",
-    "@angular/forms": "^15.2.0-next.2",
-    "@angular/platform-browser": "^15.2.0-next.2",
-    "@angular/platform-browser-dynamic": "^15.2.0-next.2",
-    "@angular/router": "^15.2.0-next.2",
+    "@angular/animations": "^15.1.0",
+    "@angular/common": "^15.1.0",
+    "@angular/compiler": "^15.1.0",
+    "@angular/core": "^15.1.0",
+    "@angular/forms": "^15.1.0",
+    "@angular/platform-browser": "^15.1.0",
+    "@angular/platform-server": "^15.1.0",
+    "@angular/platform-browser-dynamic": "^15.1.0",
+    "@angular/router": "^15.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.4.1",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.0-next.2",
-    "@angular/cli": "~15.2.0-next.2",
-    "@angular/compiler-cli": "^15.2.0-next.2",
+    "@angular-devkit/build-angular": "^15.1.0",
+    "@angular/cli": "~15.1.0",
+    "@angular/compiler-cli": "^15.1.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-angular": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
