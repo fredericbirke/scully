@@ -1,0 +1,21 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: google/wireit@setup-github-actions-caching/v1
+      - name: 👷 install
+        run: |
+          npm install
+      - name: 🏗️ build
+        run: |
+          npm run build
