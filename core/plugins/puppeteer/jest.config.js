@@ -1,6 +1,5 @@
 module.exports = {
   displayName: 'plugins-scully-plugin-puppeteer',
-  preset: '../../../jest.preset.mjs',
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
