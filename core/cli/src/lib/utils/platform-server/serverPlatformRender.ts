@@ -61,5 +61,8 @@ async function renderWithSpSPlugin(routes: HandledRoute[]) {
   const jobs = routes.map((r, i) => {
     return new Job('render', r);
   });
-  await handleJobs(jobs, getPool(workerPath));
-}
+  try {
+    await handleJobs(jobs, getPool(workerPath));
+  } catch (e) {
+    logError(e);
+  }}

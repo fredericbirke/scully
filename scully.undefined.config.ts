@@ -42,7 +42,7 @@ export const config = new Promise<ScullyConfig>((resolve) => {
          */
         userId: {
           url: 'http://localhost:8200/users',
-          // resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 5),
+          resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 10),
           property: 'id',
         },
       },
@@ -72,7 +72,7 @@ export const config = new Promise<ScullyConfig>((resolve) => {
          */
         userId: {
           url: 'http://localhost:8200/users',
-          // resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 3),111
+          resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 10),
           property: 'id',
         },
         postId: {
@@ -85,7 +85,7 @@ export const config = new Promise<ScullyConfig>((resolve) => {
         // type:'json',
         userId: {
           url: 'http://localhost:8200/users',
-          resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 3),
+          resultsHandler: (raw: any[]) => raw.filter((row) => row.id < 10),
           property: 'id',
         },
         friendCode: {

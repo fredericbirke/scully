@@ -38,8 +38,8 @@ export class Job {
     ])
       .then(r => this.#done(r))
       .catch(e => {
-        console.log('fail', e);
-        return this.#fail(e);
+        this.started = false;
+        return this.#fail(new Error(`Unforeseen (timeout)error while trying to render route "${this.taskValue?.route??'unknown'}"`));
       })
       .finally(() => {
         clearTimeout(cancelTimeout);

@@ -13,8 +13,6 @@ import { displayVersions, version } from './lib/utils/version.js';
 
 environmentChecks();
 
-console.log('🎉')
-
 process.title = 'Scully';
 
 yargs(process.argv.slice(2))
