@@ -128,6 +128,13 @@
     },
     "scully": {
       "command": "node node_modules/.bin/scully --tds  --404=index --noCache --proxy proxy.conf.cjs --RSD",
+      "files": [
+        "./dist/sample-blog/**",
+        "./scully.undefined.config.ts"
+      ],
+      "output": [
+        "./dist/static/sample-blog"
+      ],
       "dependencies": [
         "build",
         "symlinks"
@@ -142,7 +149,10 @@
     },
     "test": {
       "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-      "dependencies": []
+      "dependencies": [
+        "build",
+        "symlinks"
+      ]
     }
   },
   "private": true,
