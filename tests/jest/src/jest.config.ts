@@ -1,17 +1,10 @@
 const config = {
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-    },
-  },
   testEnvironment: 'jsdom',
-
   setupFilesAfterEnv: ['../../../tests/jest/src/setup-jest.ts'],
   transform: {
-    '^.+\\.[tj]sx?$': 'ts-jest',
+    '^.+\\.[tj]sx?$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../../coverage/custom-test-set',
   displayName: 'custom-test-set',
 };
 
