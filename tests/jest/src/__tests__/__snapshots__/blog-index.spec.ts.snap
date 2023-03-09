@@ -223,11 +223,9 @@ exports[`ContentFolder: Test blog/page-1 Check contentPlugin render 1`] = `
     <app-root class="foo" ="" other"><header =""><h1 =""> Scully demo blog app! <small ="">rendering inside scully</small></h1><a ="" href="/home">🏠</a></header><main =""><router-outlet =""></router-outlet><app-blog-holder><h3>Scully blog content</h3><hr><router-outlet></router-outlet><app-blog ="">
 <!--scullyContent-begin--><h1 id="page-1" ="">Page 1</h1>
 <h2 id="or-how-to-do-interesting-blog-things" ="">or, how to do interesting blog things</h2>
-<pre =""><code class="language-typescript" ="">console.log('hello world');
-console.log('yah');
-const x = 123;
-</code></pre>
-<p ="">Hello Dolly?</p>
+<pre class="language-typescript" =""><code class="language-typescript" =""><span class="token builtin" ="">console</span><span class="token punctuation" ="">.</span><span class="token function" ="">log</span><span class="token punctuation" ="">(</span><span class="token string" ="">'hello world'</span><span class="token punctuation" ="">)</span><span class="token punctuation" ="">;</span>
+<span class="token builtin" ="">console</span><span class="token punctuation" ="">.</span><span class="token function" ="">log</span><span class="token punctuation" ="">(</span><span class="token string" ="">'yah'</span><span class="token punctuation" ="">)</span><span class="token punctuation" ="">;</span>
+<span class="token keyword" ="">const</span> x <span class="token operator" ="">=</span> <span class="token number" ="">123</span><span class="token punctuation" ="">;</span></code></pre><p ="">Hello Dolly?</p>
 <p ="">Related information <a href="/blog/___UNPUBLISHED___k5nhcflm_SJwD4Z0QDrIHg1PGHo2mrfLZE8sfUsPy" ="">page-2</a></p>
 <p =""><a href="/content/two" ="">content page</a></p>
 <h1 id="down-under" ="">Down-under</h1>

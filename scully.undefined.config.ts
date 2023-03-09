@@ -12,6 +12,7 @@ import {
   registerPlugin,
   RouteConfig,
   ScullyConfig,
+  setPluginConfig,
 } from '@scullyio/scully';
 import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
 import { docLink } from '@scullyio/scully-plugin-docs-link-update';
@@ -27,6 +28,9 @@ import { criticalCSS } from '@scullyio/scully-plugin-critical-css';
 
 const FlashPrevention = getFlashPreventionPlugin();
 
+setPluginConfig('md', { enableSyntaxHighlighting: true });
+setPluginConfig(baseHrefRewrite, { href: '/' });
+
 export const config = new Promise<ScullyConfig>((resolve) => {
   const config = {
     projectName: 'sample-blog',
@@ -36,7 +40,7 @@ export const config = new Promise<ScullyConfig>((resolve) => {
     extraRoutes: new Promise((resolve) => {
       resolve(['/exclude/present', '/test/fakeBase', '/content/hello', '/content/there', '/rawRoute']);
     }),
-    defaultPostRenderers: [copyToClipboard, criticalCSS, 'seoHrefOptimise'],
+    defaultPostRenderers: [copyToClipboard, criticalCSS, 'seoHrefOptimize'],
     routes: {
       '/demo/:id': {
         type: 'extra',
