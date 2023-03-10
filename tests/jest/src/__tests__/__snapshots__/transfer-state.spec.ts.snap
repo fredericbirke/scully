@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransferState should add state to page 1 1`] = `
+{
+  "address": {
+    "city": "Gwenborough",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496",
+    },
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "zipcode": "92998-3874",
+  },
+  "company": {
+    "bs": "harness real-time e-markets",
+    "catchPhrase": "Multi-layered </script> 'client-server' SQL DROP USERS
+ neural-net",
+    "name": "Romaguera-Crona",
+  },
+  "email": "Sincere@april.biz",
+  "id": 1,
+  "name": "Leanne "Graham  o'neil"",
+  "phone": "1-770-736-8031 x56442",
+  "username": "Bret \${Zombie} here </script>",
+  "website": "hildegard.org",
+}
+`;
+
+exports[`TransferState should add state to page 1 2`] = `undefined`;
+
+exports[`TransferState should add state to page 1/post/1 1`] = `undefined`;
+
+exports[`TransferState should add state to page 1/post/1 2`] = `
+{
+  "address": {
+    "city": "Gwenborough",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496",
+    },
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "zipcode": "92998-3874",
+  },
+  "company": {
+    "bs": "harness real-time e-markets",
+    "catchPhrase": "Multi-layered </script> 'client-server' SQL DROP USERS
+ neural-net",
+    "name": "Romaguera-Crona",
+  },
+  "email": "Sincere@april.biz",
+  "id": 1,
+  "name": "Leanne "Graham  o'neil"",
+  "phone": "1-770-736-8031 x56442",
+  "username": "Bret \${Zombie} here </script>",
+  "website": "hildegard.org",
+}
+`;
