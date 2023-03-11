@@ -20,8 +20,9 @@
     "serve:sampleBlog": "wireit",
     "serve:docs": "wireit",
     "test": "wireit",
+    "scully:sampleBlog": "wireit",
+    "scully:scullyDocs": "wireit",
     "scully": "wireit",
-    "scullyDocs": "wireit",
     "symlinks": "npx symlink-dir ./dist/scullyio/platform-server node_modules/@scullyio/platform-server && npx symlink-dir ./dist/scullyio/ng-lib node_modules/@scullyio/ng-lib",
     "prepare": "git config core.hooksPath .git-hooks"
   },
@@ -126,7 +127,7 @@
         }
       ]
     },
-    "scully": {
+    "scully:sampleBlog": {
       "command": "node node_modules/.bin/scully --tds  --404=index --noCache --proxy proxy.conf.cjs --RSD",
       "files": [
         "./dist/sample-blog/**",
@@ -140,18 +141,20 @@
         "symlinks"
       ]
     },
-    "scullyDocs": {
+    "scully:scullyDocs": {
       "command": "node --experimental-specifier-resolution=node node_modules/.bin/scully --RSD --project scully-docs --404=index --TS",
       "dependencies": [
         "build",
         "symlinks"
       ]
     },
+    "scully": {
+      "command": "npm run scully:sampleBlog && npm run scully:scullyDocs"
+    },
     "test": {
       "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
       "dependencies": [
-        "build",
-        "symlinks"
+        "scully"
       ]
     }
   },
